@@ -1,0 +1,138 @@
+.hero {
+  background-image: url("../../../../public/images/herobackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  mix-blend-mode: normal;
+  opacity: 1;
+  position: relative;
+  z-index: 200;
+}
+.hero .container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  
+}
+
+
+.hero p {
+  color: rgb(0, 0, 0);
+  opacity: 1;
+  font-size: 20px;
+}
+.hero img {
+  width: 700px;
+}
+
+
+.hero {
+ 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;  
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2rem;
+  font-weight: 100;
+}
+
+.service-box {
+  background-color: rgba(235, 233, 233, 0.395);
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9d9d9d4b;
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.btn4.herobtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #33a46e;
+}
+.btn4.herobtn.btn4.herobtn:hover{
+  background-color: #009c7d;
+  color: #fff;
+}
+
+.nav2 .nav-links i{
+  padding: 2px;
+}
+.service-box i {
+  font-size: 2rem;
+}
+
+.service-box:hover {
+  background-color: #009c7d;
+}
+
+.service-box:hover span {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.service-box span {
+  display: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: -1rem;
+}
+
+.service-box .service-text {
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  color: #003c30;
+}
+
+.service-box:hover .service-text {
+  display: block;
+}
+
+.hero a:hover{
+  color: #fff;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(17, 72, 56, 0.378);
+  z-index: -1;
+}
