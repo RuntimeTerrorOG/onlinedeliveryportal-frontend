@@ -25,7 +25,7 @@
                 className="userShowImg"
               />
               <div className="userShowTopTitle">
-                <span className="userShowUsername">Dani Daniels</span>
+                <span className="userShowUsername">Udara Dilaksha</span>
                 <span className="userShowUserTitle">Resource Handler</span>
               </div>
             </div>
@@ -33,11 +33,11 @@
               <span className="userShowTitle">Account Details</span>
               <div className="userShowInfo">
                 <PermIdentityIcon className="userShowIcon" />
-                <span className="userShowInfoTitle">dani69</span>
+                <span className="userShowInfoTitle">Udara7</span>
               </div>
               <div className="userShowInfo">
                 <CalendarTodayIcon className="userShowIcon" />
-                <span className="userShowInfoTitle">23.09.1989</span>
+                <span className="userShowInfoTitle">07.12.2000</span>
               </div>
               <span className="userShowTitle">Contact Details</span>
               <div className="userShowInfo">
@@ -46,11 +46,11 @@
               </div>
               <div className="userShowInfo">
                 <MailOutlineIcon className="userShowIcon" />
-                <span className="userShowInfoTitle">danidaniels@gmail.com</span>
+                <span className="userShowInfoTitle">Udara@gmail.com</span>
               </div>
               <div className="userShowInfo">
                 <LocationSearchingIcon className="userShowIcon" />
-                <span className="userShowInfoTitle">No.69 colombo Srilanka</span>
+                <span className="userShowInfoTitle">No.231/12 Colombo/Srilanka</span>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@
                   <label>Username</label>
                   <input
                     type="text"
-                    placeholder="dani69"
+                    placeholder="Udara7"
                     className="userUpdateInput"
                   />
                 </div>
@@ -70,7 +70,7 @@
                   <label>Full Name</label>
                   <input
                     type="text"
-                    placeholder="Dani Daniels"
+                    placeholder="Udara Dilaksha"
                     className="userUpdateInput"
                   />
                 </div>
@@ -78,7 +78,7 @@
                   <label>Email</label>
                   <input
                     type="text"
-                    placeholder="danidaniels@gmail.com"
+                    placeholder="Udara@gmail.com"
                     className="userUpdateInput"
                   />
                 </div>
@@ -94,7 +94,7 @@
                   <label>Address</label>
                   <input
                     type="text"
-                    placeholder="No.69 Colombo Srilanka"
+                    placeholder="No.231/12 Colombo/Srilanka"
                     className="userUpdateInput"
                   />
                 </div>

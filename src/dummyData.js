@@ -67,10 +67,10 @@ export const productData = [
 export const userRows = [
   {
     id: 1,
-    username: "Jude bellingham",
+    username: "Udara dilaksha",
     avatar:
       "",
-    email: "jude@gmail.com",
+    email: "Udara@gmail.com",
     phoneNo: "77 297 5936",
   },
   {
@@ -152,10 +152,10 @@ export const userRows = [
 export const customerRows = [
   {
     id: 1,
-    username: "udara dilaksha",
+    username: "Jude belingham",
     avatar:
       "",
-    email: "udara@gmail.com",
+    email: "Jude@gmail.com",
     status: "active",
     phoneNo: "77 297 5936",
   },
