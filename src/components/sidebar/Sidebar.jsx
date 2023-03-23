@@ -14,77 +14,102 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import { Link } from "react-router-dom";
 
 export default function Sidebar() {
-    return (
-      <div className="sidebar">
-        <div className="sidebarWrapper">
-          <div className="sidebarMenu">
-            <h3 className="sidebarTitle"><br/><br/>Dashboard</h3>
-            <ul className="sidebarList">
-              <li className="sidebarListItem active">
+  return (
+    <div className="sidebar">
+      <div className="sidebarWrapper">
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle"><br/><br/>Dashboard</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem active">
+              <Link to="/" style={{color: 'grey'}}>
                 <LineStyleIcon className="sidebarIcon" />
-                <Link to="/"> Home</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="sidebarMenu">
-            <h3 className="sidebarTitle">Menu</h3>
-            <ul className="sidebarList">
-                <li className="sidebarListItem">
-                  <PersonIcon className="sidebarIcon" /><Link to="newUser"> Users</Link>
-                </li>
-                <li className="sidebarListItem">
-                  <InventoryIcon className="sidebarIcon" />
-                  <Link to="/newproduct">Add Items</Link>
-                </li>
-                <li className="sidebarListItem">
-                  <InventoryIcon className="sidebarIcon" />
-                  <Link to="/product/:productId">Products</Link>
-                </li>
-              <li className="sidebarListItem">
+                Home
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Menu</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem">
+              <Link to="/newUser" style={{color: 'grey'}}>
+                <PersonIcon className="sidebarIcon" />
+                Users
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/newproduct" style={{color: 'grey'}}>
+                <InventoryIcon className="sidebarIcon" />
+                Add Items
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/product/:productId" style={{color: 'grey'}}>
+                <InventoryIcon className="sidebarIcon" />
+                Products
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/users" style={{color: 'grey'}}>
                 <BadgeIcon className="sidebarIcon" />
-                <Link to="/users">Employee Detailes</Link>
-              </li>
-              <li className="sidebarListItem">
+                Employee Details
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/customers" style={{color: 'grey'}}>
                 <GroupsIcon className="sidebarIcon" />
                 Customer Details
-              </li>
-            </ul>
-          </div>
-          <div className="sidebarMenu">
-            <h3 className="sidebarTitle">Notifications</h3>
-            <ul className="sidebarList">
-              <li className="sidebarListItem">
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Notifications</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem">
+              <Link to="/" style={{color: 'grey'}}>
                 <MailOutlineIcon className="sidebarIcon" />
                 Mail
-              </li>
-              <li className="sidebarListItem">
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/" style={{color: 'grey'}}>
                 <DynamicFeedIcon className="sidebarIcon" />
                 Feedback
-              </li>
-              <li className="sidebarListItem">
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/" style={{color: 'grey'}}>
                 <QuizIcon className="sidebarIcon" />
                 FAQ
-              </li>
-            </ul>
-          </div>
-          <div className="sidebarMenu">
-            <h3 className="sidebarTitle">Reports</h3>
-            <ul className="sidebarList">
-              <li className="sidebarListItem">
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Reports</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem">
+              <Link to="/piechart" style={{color: 'grey'}}>
                 <PieChartIcon className="sidebarIcon" />
-                <Link to="piechart">Pie Chart </Link>
-              </li>
-              <li className="sidebarListItem">
+                Pie Chart 
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/Linechart" style={{color: 'grey'}}>
                 <LineAxisIcon className="sidebarIcon" />
-                <Link to="/Linechart">Line Chart</Link>
-              </li>
-              <li className="sidebarListItem">
+                Line Chart
+              </Link>
+            </li>
+            <li className="sidebarListItem">
+              <Link to="/" style={{color: 'grey'}}>
                 <BarChartIcon className="sidebarIcon" />
                 Bar Chart
-              </li>
-            </ul>
-          </div>
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
+}

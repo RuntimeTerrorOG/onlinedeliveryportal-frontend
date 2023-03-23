@@ -9,7 +9,7 @@ import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import UserList from "./pages/userList/UserList";
 import LineChart  from "./pages/lineChart/LineChart";
-
+import CustomerList from "./pages/customerList/CustomerList";
 
 function App() {
   return (
@@ -23,6 +23,9 @@ function App() {
           </Route>
           <Route path="/users">
             <UserList />
+          </Route>
+          <Route path="/customers">
+            <CustomerList/>
           </Route>
           <Route path="/user/:userId">
             <User />
@@ -38,7 +41,7 @@ function App() {
           </Route>
           <Route path="/Linechart">
             <LineChart />
-        
+
           </Route>
         </Switch>
       </div>

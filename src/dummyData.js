@@ -67,65 +67,150 @@ export const productData = [
 export const userRows = [
   {
     id: 1,
-    username: "Jon Snow",
+    username: "Jude bellingham",
     avatar:
       "",
-    email: "jon@gmail.com",
-    status: "active",
+    email: "jude@gmail.com",
     phoneNo: "77 297 5936",
   },
   {
     id: 2,
-    username: "Jon Snow",
+    username: "cristiano ronaldo",
     avatar:
       "",
-    email: "jon@gmail.com",
-    status: "active",
+    email: "cristiano@gmail.com",
     phoneNo: "77 297 5936",
   },
   {
     id: 3,
-    username: "Jon Snow",
+    username: "enric haland",
     avatar:
       "",
-    email: "jon@gmail.com",
+    email: "haland@gmail.com",
     status: "active",
     phoneNo: "77 297 5936",
   },
   {
     id: 4,
-    username: "Jon Snow",
+    username: "leo messi",
     avatar:
       "",
-    email: "jon@gmail.com",
-    status: "active",
+    email: "messi@gmail.com",
     phoneNo: "77 297 5936",
   },
   {
     id: 5,
-    username: "Jon Snow",
+    username: "brent rivera",
     avatar:
       "",
-    email: "jon@gmail.com",
-    status: "active",
+    email: "brent@gmail.com",
     phoneNo: "77 297 5936",
   },
   {
     id: 6,
-    username: "Jon Snow",
+    username: "Justin timberlake",
     avatar:
       "",
-    email: "jon@gmail.com",
+    email: "timberlake@gmail.com",
     status: "active",
     phoneNo: "77 297 5936",
   },
   {
     id: 7,
-    username: "Jon Snow",
+    username: "bon jovi",
     avatar:
       "",
-    email: "jon@gmail.com",
+    email: "jovi@gmail.com",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 8,
+    username: "mia khalifa",
+    avatar:
+      "",
+    email: "mia@gmail.com",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 9,
+    username: "angle dimaria",
+    avatar:
+      "",
+    email: "angle@gmail.com",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 10,
+    username: "steph curry",
+    avatar:
+      "",
+    email: "curry@gmail.com",
+    phoneNo: "77 297 5936",
+  },
+];
+
+export const customerRows = [
+  {
+    id: 1,
+    username: "udara dilaksha",
+    avatar:
+      "",
+    email: "udara@gmail.com",
     status: "active",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 2,
+    username: "prageeth jayasinghe",
+    avatar:
+      "",
+    email: "prageeth@gmail.com",
+    status: "active",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 3,
+    username: "dilini senarathna",
+    avatar:
+      "",
+    email: "dilini@gmail.com",
+    status: "active",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 4,
+    username: "ransilu sooriahette",
+    avatar:
+      "",
+    email: "ransilu@gmail.com",
+    status: "active",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 5,
+    username: "sajini sandareka",
+    avatar:
+      "",
+    email: "sajini@gmail.com",
+    status: "active",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 6,
+    username: "isuri iddamalgoda",
+    avatar:
+      "",
+    email: "isuri@gmail.com",
+    status: "active",
+    phoneNo: "77 297 5936",
+  },
+  {
+    id: 7,
+    username: "jsutin bieber",
+    avatar:
+      "",
+    email: "justin@gmail.com",
+    status: "no active",
     phoneNo: "77 297 5936",
   },
   {
@@ -139,19 +224,19 @@ export const userRows = [
   },
   {
     id: 9,
-    username: "Jon Snow",
+    username: "camilia cabelo",
     avatar:
       "",
-    email: "jon@gmail.com",
-    status: "active",
+    email: "camila@gmail.com",
+    status: "no active",
     phoneNo: "77 297 5936",
   },
   {
     id: 10,
-    username: "Jon Snow",
+    username: "mandy rose",
     avatar:
       "",
-    email: "jon@gmail.com",
+    email: "mandy@gmail.com",
     status: "active",
     phoneNo: "77 297 5936",
   },
