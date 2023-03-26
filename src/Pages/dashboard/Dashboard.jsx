@@ -10,6 +10,7 @@ const Dashboard = () => {
         <div className="dashboardContainer">
         <Navbar/>
           Dashboard container
+          ransilu sooriyahetti
         </div>
     </div>
   )
