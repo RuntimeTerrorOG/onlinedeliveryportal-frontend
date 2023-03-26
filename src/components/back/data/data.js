@@ -3,7 +3,7 @@ const data = {
         {
             id: "1",
             name: "T-Shirt",
-            price: 350,
+            price: 3500,
             image: "./pics/t shirt.jpg",
         },
         {
