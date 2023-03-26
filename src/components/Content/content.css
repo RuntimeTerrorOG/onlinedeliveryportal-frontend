@@ -1,0 +1,136 @@
+.wrapper{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(101, 21, 117, 0.471);
+    width: 18rem;
+    height: 15rem;
+    margin-left: 37rem;
+    
+}
+
+
+.card h4 {
+    color:white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0.1rem;
+    padding: 20px;
+}
+
+
+.card__icon i {
+    font-size: 2rem;
+    font-weight: 400 !important;
+    color: rgba(255,255,255,0.845);
+    padding: 20px;
+}
+
+
+.card__actions button{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+    background: white;
+    color: var(--primary-color);
+    border: radius 1rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+}
+
+.wrapper:hover{
+    transform: scale(1.05);
+}
+
+.card:hover button {
+background: var(--primary-color);
+color: white;
+}
+
+.content h2{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 41rem;
+    font-size: 2rem; 
+}
+
+
+.content2__card{
+    margin-top: 30px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: row;
+    overflow: hidden;
+   
+}
+
+
+.card2:nth-child(1) {
+    background: rgba(19, 158, 109, 0.458);
+    width: 20rem;
+    height: 15rem;
+}
+
+
+.card2:nth-child(2) {
+    background: rgba(19, 158, 109, 0.458);
+    width: 20rem;
+    height: 15rem;
+}
+
+
+.card2__content h4 {
+    color: rgb(231, 32, 32);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.card2__content span {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card2__icon img {
+    width: 190px;
+    height: 60px;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+
+
+
+.content2__cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+}
+
+.card2:hover{
+    transform: scale(1.05);
+}
+
+
+.card2{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-radius: 5px;
+}
+
