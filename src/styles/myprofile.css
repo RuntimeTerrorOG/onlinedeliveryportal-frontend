@@ -1,0 +1,110 @@
+.myprofile {
+    margin-top: 100px;
+    padding: 0px 30px;
+    padding-bottom: 50px;
+}
+
+.myprofile__wrapper {
+    padding: 20px;
+    border-radius: 5px;
+    background:#5792ea8d;
+}
+
+.myprofile__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+    
+}
+
+.myprofile__btn {
+    border: none;
+    border: none;
+    padding: 7px 25px;
+    background: transparent;
+    border-radius: 5px;
+    color: var(--heading-color);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+ 
+
+  .profile__title {
+    color:black;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .profile__desc {
+    color:rgba(95, 93, 93, 0.862);
+    margin-bottom: 2rem;
+  }
+  
+  label {
+    color:black;
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  
+  .form__group div {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  }
+  
+  .form__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form__group div input {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background:white;
+    border: 1px solid #0c0c0c13;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  .form__group div input::placeholder {
+    color:rgb(212, 209, 209);
+    font-size: 0.9rem;
+  }
+  
+  .form__group div input:focus {
+    outline: none;
+  }
+  
+  .profile-img__desc {
+    color:rgba(95, 93, 93, 0.862);
+    margin-bottom: 10px;
+  }
+  
+  .profile__img-btns {
+    display: flex;
+    flex-direction: row !important;
+    column-gap: 2.7rem;
+  }
+  
+  .dlt__btn,
+  .update__btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #f8fafb;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .update__btn {
+    color:rgb(244, 247, 252);
+  }
+  
+
+
+
+  

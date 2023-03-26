@@ -1,0 +1,83 @@
+.mydiscounts{
+    margin-top: 100px;
+    padding: 0px 30px;
+}
+
+.mydiscounts h2{
+    font-size: 2rem;
+}
+
+.discount__card{
+    margin-top: 30px;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+   
+}
+
+.discount__card:nth-child(1) {
+    background: rgba(22, 239, 163, 0.458);
+}
+
+.discount__card:nth-child(2) {
+    background:pink;
+}
+
+.discount__card:nth-child(3) {
+    background: rgb(246, 238, 162);
+}
+
+.discard__content h4 {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+
+.discard__content span {
+    color: black;
+    font-size: 1rem;
+}
+
+.discard__icon {
+    font-size: 4rem;
+    font-weight: 400 !important;
+    color: rgba(255,255,255,0.845);
+}
+
+.discard__actions button{
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid var(--primary-color);
+    background: white;
+    color: var(--primary-color);
+    border: radius 1rem;
+    transition: background 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+}
+
+.mydiscounts__cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+}
+
+.discount__card:hover{
+    transform: scale(1.05);
+}
+
+.discount__card:hover button {
+background: var(--primary-color);
+color: white;
+}
+

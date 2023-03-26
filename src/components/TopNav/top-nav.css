@@ -1,0 +1,102 @@
+
+
+.top__nav{
+   position: fixed;
+   top: 0;
+   left: calc(260px +10px );
+   z-index: 999;
+   background: var(--primary-color);
+   width: calc(100% - 260px);
+   height: 70px;
+   line-height: 70px; 
+
+}
+
+.top__nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 800px;
+    column-gap: 2rem;
+    
+}
+
+
+
+.top__nav-right{
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+    justify-content: flex-end;
+}
+
+.search__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background: #cbcbcd !important;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+}
+
+.search__box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--small-text-color);
+}
+
+.search__box input ::placeholder{
+    color: var(--small-text-color);
+}
+
+.search__box span i{
+    color: var(--small-text-color);
+}
+
+
+.notification i {
+    color: var(--small-text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.notification{
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    top: 25%;
+    right: -10%;
+    width: 13px;
+    height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--notify-color);
+    border-radius: 50%;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.settings i{
+    color: var(--small-text-color);
+    font-size: 1.2rem;
+    cursor: pointer; 
+   
+}
+
+.profile1 i {
+    color: var(--small-text-color);
+    font-size: 1.2rem;
+    cursor: pointer; 
+}
+
+.mode i {
+    color: var(--small-text-color);
+    font-size: 1.2rem;
+    cursor: pointer; 
+}
