@@ -1,0 +1,79 @@
+.navbar{
+    height: 70px;
+    background-color:#BD5959;
+    border-bottom: 0.5px #BD5959;
+    display:flex;
+    align-items:center;
+    font-size: 14px;
+    
+ .wrapper{
+        width:100%;
+        display:flex;
+        padding:10px;
+        justify-content: space-between;
+
+
+
+     .pageSelected{
+        width: 20%;
+        background-color: blue;;
+        display: flex;
+        align-items:center;
+        
+     }
+
+     .optionPanel{
+
+                display: flex;
+            
+         .search{
+            display:flex;
+            align-items:center;
+            margin-right:30px;
+           }
+
+          .items{
+                display:flex;
+                align-items: center;
+                margin-right:10px;
+            
+
+              .item{
+                display:flex;
+                margin-right:17px;
+                position: relative;
+                
+                .icon{
+                    font-size:25px;
+                }
+
+                .avatar{
+                    width:50px;
+                    height:50px;
+                    border-radius:50%;
+                    border:2px solid black;
+                    margin-left:45px;
+                }
+
+                .counter{
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                    width:15px;
+                    height:15px;
+                    background-color: rgb(22, 135, 52);
+                    border-radius:50%;
+                    color:white;
+                    font-size:10px;
+                    font-weight:bold;
+                    position: absolute;
+                    top:-4px;
+                    right:-4px;
+                }
+                  
+            }
+            
+         }
+      }
+    }
+}
