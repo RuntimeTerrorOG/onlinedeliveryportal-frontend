@@ -11,7 +11,7 @@ const Navbar = () => {
     <div className = "navbar">
 
       <div className="wrapper">
-        
+
         <div className="PageSelected">
           SELECTED TAB NAME
         </div>
