@@ -8,6 +8,7 @@
   import PublishIcon from '@mui/icons-material/Publish';
   
   export default function User() {
+    fetch("ht")
     return (
       <div className="user">
         <div className="userTitleContainer">
