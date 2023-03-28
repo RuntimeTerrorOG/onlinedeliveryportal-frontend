@@ -1,13 +1,15 @@
 .sidebar{
     background-color: #BD5959;
-    flex:1;
+    //display:flex;
     border-right: 0.5px #BD5959;
     min-height: 100vh;
+
+    
 
     .top{
         // background-color: antiquewhite;
         height: 50px;
-        display:flex;
+        //display:flex;
         //align-items: center;
         //justify-content: center;
         padding-top:20px;
@@ -44,7 +46,7 @@
             }
 
             li{
-                display:flex;
+                //display:flex;
                 align-items: center;
                 padding: 5px;
                 cursor: pointer;

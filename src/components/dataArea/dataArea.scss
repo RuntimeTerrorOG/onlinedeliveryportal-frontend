@@ -1,0 +1,10 @@
+.dataArea{
+    min-height: 100vh;
+    display:flex;
+
+    .dashboardWidget{
+        display:flex;
+        height:50px;
+    }
+    
+}

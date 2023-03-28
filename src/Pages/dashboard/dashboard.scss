@@ -1,7 +1,23 @@
 .dashboard{
     display:flex;
 
+
+    .sidebarContainer{
+        flex:1;
+    }
+
     .dashboardContainer{
         flex:6;
+
+        .navbarContainer{
+            flex:1;
+        }
+        .dataContainer{
+            flex:5;
+        }
     }
+
+    
+
+    
 }
