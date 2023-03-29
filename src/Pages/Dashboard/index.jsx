@@ -1,7 +1,7 @@
-import Navbar from "../../components/navbar/Navbar";
-import Sidebar from "../../components/sidebar/Sidebar";
-import DataArea from "../../components/dataArea/DataArea";
-import "./dashboard.scss";
+import Navbar from "../../components/Navbar";
+import Sidebar from "../../components/Sidebar";
+import DataArea from "../../components/DataArea";
+import "./style.scss";
 
 
 const Dashboard = () => {

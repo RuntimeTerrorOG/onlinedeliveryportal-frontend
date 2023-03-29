@@ -1,4 +1,4 @@
-import "./sidebar.scss";
+import "./style.scss";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import LocalShippingRoundedIcon from '@mui/icons-material/LocalShippingRounded';
@@ -33,6 +33,7 @@ const Sidebar = () => {
           <li> <CheckroomIcon className="icon" />  <span>Laundry items</span> </li>
           <li> <BarChartIcon className="icon" />   <span>Charts</span> </li>
           <li> <ReviewsIcon className="icon" />   <span>Ratings</span> </li>
+          <li><span></span></li>
 
             <p className="title">USER</p>
           <li> <SettingsIcon className="icon" />   <span>Settings</span> </li>

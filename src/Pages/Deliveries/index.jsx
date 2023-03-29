@@ -1,4 +1,4 @@
-import "./deliveries.scss";
+import "./style.scss";
 
 const Deliveries = () => {
   return (

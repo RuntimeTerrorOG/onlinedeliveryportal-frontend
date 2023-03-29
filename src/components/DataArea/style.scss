@@ -1,0 +1,18 @@
+.dataArea{
+    display:grid;
+    justify-items: center;
+    grid-gap:2rem;
+    padding:2rem;
+        
+    
+    .dashboardWidgetContainer{
+        display:flex;
+        gap:2rem;
+
+    }
+
+    .dashboardMapContainer{
+
+    }
+    
+}

@@ -1,4 +1,4 @@
-import "./pickups.scss";
+import "./style.scss";
 
 const Pickups = () => {
   return (

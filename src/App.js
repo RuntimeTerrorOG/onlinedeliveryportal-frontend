@@ -1,4 +1,4 @@
-import Dashboard from "./Pages/dashboard/Dashboard";
+import Dashboard from "./Pages/Dashboard";
 
 
 import {
