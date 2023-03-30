@@ -8,7 +8,6 @@ import QuizIcon from '@mui/icons-material/Quiz';
 import PersonIcon from '@mui/icons-material/Person';
 import BadgeIcon from '@mui/icons-material/Badge';
 import GroupsIcon from '@mui/icons-material/Groups';
-import PieChartIcon from '@mui/icons-material/PieChart';
 import LineAxisIcon from '@mui/icons-material/LineAxis';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import { Link } from "react-router-dom";
@@ -90,21 +89,15 @@ export default function Sidebar() {
           <h3 className="sidebarTitle">Reports</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <Link to="/piechart" style={{color: 'grey'}}>
-                <PieChartIcon className="sidebarIcon" />
-                Pie Chart 
+              <Link to="/Barchart" style={{color: 'grey'}}>
+                <BarChartIcon className="sidebarIcon" />
+                Bar Chart
               </Link>
             </li>
             <li className="sidebarListItem">
               <Link to="/Linechart" style={{color: 'grey'}}>
                 <LineAxisIcon className="sidebarIcon" />
                 Line Chart
-              </Link>
-            </li>
-            <li className="sidebarListItem">
-              <Link to="/" style={{color: 'grey'}}>
-                <BarChartIcon className="sidebarIcon" />
-                Bar Chart
               </Link>
             </li>
           </ul>

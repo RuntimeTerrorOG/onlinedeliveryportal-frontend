@@ -27,7 +27,7 @@ export default function NewProduct() {
         redirect: "follow",
       };
   
-      fetch("http://localhost:8080/postAdmin", requestOptions)
+      fetch("http://localhost:8080/postProduct", requestOptions)
         .then((response) => response.text())
         .then((result) => console.log(result))
         .catch((error) => console.log("error", error));

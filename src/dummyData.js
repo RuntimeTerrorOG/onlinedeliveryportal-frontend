@@ -52,15 +52,15 @@ export const userData = [
 export const productData = [
   {
     name: "Jan",
-    "Sales": 4000,
+    "customers": 4000,
   },
   {
     name: "Feb",
-    "Sales": 3000,
+    "customers": 3000,
   },
   {
     name: "Mar",
-    "Sales": 5000,
+    "customers": 5000,
   },
 ];
 
@@ -125,10 +125,10 @@ export const userRows = [
   },
   {
     id: 8,
-    username: "mia khalifa",
+    username: "dani daniels",
     avatar:
       "",
-    email: "mia@gmail.com",
+    email: "dani@gmail.com",
     phoneNo: "77 297 5936",
   },
   {

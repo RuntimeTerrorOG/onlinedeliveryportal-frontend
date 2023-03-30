@@ -16,11 +16,11 @@ export default function WidgetLg() {
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src=""
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">maddie jao</span>
+            <span className="widgetLgName">udara dilaksha</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgStatus">
@@ -30,11 +30,11 @@ export default function WidgetLg() {
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src=""
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">udara dilakhas</span>
+            <span className="widgetLgName">jason druello</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgStatus">
@@ -44,11 +44,11 @@ export default function WidgetLg() {
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src=""
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Susan juniour</span>
+            <span className="widgetLgName">Susan rose</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgStatus">
@@ -58,11 +58,11 @@ export default function WidgetLg() {
         <tr className="widgetLgTr">
           <td className="widgetLgUser">
             <img
-              src="https://images.pexels.com/photos/4172933/pexels-photo-4172933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              src=""
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Susan Carol</span>
+            <span className="widgetLgName">dustin porrior</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgStatus">

@@ -13,7 +13,7 @@ export default function WidgetSm() {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <span className="widgetSmUsername">john kelly</span>
+            <span className="widgetSmUsername">Jude belligham</span>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon className="widgetSmIcon" />
@@ -27,7 +27,7 @@ export default function WidgetSm() {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <span className="widgetSmUsername">Anna Keller</span>
+            <span className="widgetSmUsername">camila cabello</span>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon className="widgetSmIcon" />
@@ -41,7 +41,7 @@ export default function WidgetSm() {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <span className="widgetSmUsername">mathew simon</span>
+            <span className="widgetSmUsername">mandy rose</span>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon className="widgetSmIcon" />
@@ -55,7 +55,7 @@ export default function WidgetSm() {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <span className="widgetSmUsername">vinceint dias</span>
+            <span className="widgetSmUsername">justin bieber</span>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon className="widgetSmIcon" />
@@ -69,7 +69,7 @@ export default function WidgetSm() {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <span className="widgetSmUsername">brad pits</span>
+            <span className="widgetSmUsername">jon snow</span>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon className="widgetSmIcon" />

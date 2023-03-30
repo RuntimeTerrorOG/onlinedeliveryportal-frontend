@@ -21,9 +21,10 @@
     color: rgb(187, 186, 186);
   }
   
-  .sidebarList {
+  .sidebarList a {
     list-style: none;
     padding: 5px;
+    text-decoration: none;
   }
   
   .sidebarListItem {

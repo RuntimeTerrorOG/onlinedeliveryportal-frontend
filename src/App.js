@@ -8,8 +8,9 @@ import NewUser from "./pages/newUser/NewUser";
 import Product from "./pages/product/Product";
 import NewProduct from "./pages/newProduct/NewProduct";
 import UserList from "./pages/userList/UserList";
-import LineChart  from "./pages/lineChart/LineChart";
+import LineChart from "./pages/lineChart/LineChart";
 import CustomerList from "./pages/customerList/CustomerList";
+import { BarChart, Bar } from "recharts";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <UserList />
           </Route>
           <Route path="/customers">
-            <CustomerList/>
+            <CustomerList />
           </Route>
           <Route path="/user/:userId">
             <User />
@@ -41,11 +42,14 @@ function App() {
           </Route>
           <Route path="/Linechart">
             <LineChart />
-
+            <BarChart>
+              <Bar dataKey="value" fill="#8884d8" />
+            </BarChart>
           </Route>
         </Switch>
       </div>
     </Router>
   );
 }
+
 export default App;

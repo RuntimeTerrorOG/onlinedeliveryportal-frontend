@@ -15,10 +15,23 @@ export default function NewUser() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/gim;
+    if (!re.test(data.phoneNo)) {
+      alert("enter valid phone number");
+      setData((prev) => ({ ...prev, phoneNo: "" }));
+    }
+
+    const reg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    if (!reg.test(data.email)) {
+      alert("enter valid email");
+      setData((prev) => ({ ...prev, email: "" }));
+    }
+
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    var raw = JSON.stringify(data)
+    var raw = JSON.stringify(data);
 
     var requestOptions = {
       method: "POST",
@@ -77,7 +90,7 @@ export default function NewUser() {
           <label>Phone</label>
           <input
             onChange={(e) => handleChange("phoneNo", e)}
-            type="text"
+            type="tel"
             placeholder="+94 77 297 5936"
             value={data.phoneNo}
           />
@@ -100,13 +113,13 @@ export default function NewUser() {
               name="gender"
               id="male"
               value="male"
-              checked={data.gender === 'male'}
+              checked={data.gender === "male"}
             />
             <label for="male">Male</label>
             <input
               onChange={(e) => handleChange("gender", e)}
               type="radio"
-              checked={data.gender === 'female'}
+              checked={data.gender === "female"}
               name="gender"
               id="female"
               value="female"
