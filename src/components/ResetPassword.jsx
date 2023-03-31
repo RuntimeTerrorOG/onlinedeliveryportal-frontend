@@ -54,7 +54,7 @@ export const ResetPassword = () => {
         e.preventDefault()
         const resetpassword={name, email, pass: cpass }
         console.log(resetpassword)
-        fetch("http://localhost:8090/api/v1/user/updateUser",{
+        fetch("http://localhost:8080/api/v1/user/updateUser",{
           method:"PUT",
           headers:{"Content-Type":"application/json"},
           body:JSON.stringify(resetpassword)
@@ -127,3 +127,5 @@ export const ResetPassword = () => {
     </div></div>
     )
 }
+
+export default ResetPassword;

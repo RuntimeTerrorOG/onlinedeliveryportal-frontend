@@ -22,12 +22,14 @@ const ForgotPassword = () => {
     <div className='overlay-forgotpassword' />
     <div className="auth-form-container">
       <div className="logoheading"><img src='.\images\logored.png' alt='' />
-          </div>
+      </div>
+      <br></br>
       <p className="miniheading">
         Enter Your Email To Send A Reset Link <br />
         To Your Account
       </p>
-      <br />
+      <br></br>
+
       <form className="login-form" onSubmit={handleSubmit}>
         <TextField
           value={email}
@@ -42,13 +44,12 @@ const ForgotPassword = () => {
         {emailError && <p style={{ color: "red" }}>{emailError}</p>}
         <br />
         <div className="auth-form-container-button">
-          <Button variant="contained" type="submit" style={{ backgroundImage: "linear-gradient(79deg, #db2c2c, #e26868 48%, #edb9b9)" }}>
+        <Button variant="contained" type="submit" style={{ backgroundImage: "linear-gradient(79deg, #db2c2c, #e26868 48%, #edb9b9)" }}>
             Send Mail
-
-          </Button>
+        </Button>
         </div>
         <br />
-        <Link className="linkbtn" to="/">Back to Login</Link>
+        <Link className="linkbtn" to="/login">Back to Login</Link>
       </form>
     </div></div>
   );
