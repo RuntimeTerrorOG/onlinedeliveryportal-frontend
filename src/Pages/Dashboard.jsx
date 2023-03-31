@@ -4,7 +4,7 @@ import SingleCard from "../components/reusable/SingleCard";
 import Table from "../components/Table/Table";
 
 const orderObj = {
-    title: 'My',
+    title: 'My Orders',
     totalNumber: 2,
     icon: 'ri-file-list-line'
 };
