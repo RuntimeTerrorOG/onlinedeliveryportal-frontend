@@ -16,7 +16,7 @@ const DataArea = () => {
         <div className="dashboardWidgetContainer">
         
           <DashboardWidget name="Delivery"/>
-          <DashboardWidget name="Pickup"/>
+          <DashboardWidget name="Pickup" />
         </div>
 
         <div className="dashboardMapContainer">

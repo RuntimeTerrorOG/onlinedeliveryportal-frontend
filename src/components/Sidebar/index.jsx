@@ -8,6 +8,7 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import ReviewsIcon from '@mui/icons-material/Reviews';
 import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
+import StoreMallDirectoryTwoToneIcon from '@mui/icons-material/StoreMallDirectoryTwoTone';
 
 const Sidebar = () => {
   return (
@@ -33,7 +34,7 @@ const Sidebar = () => {
           <li> <CheckroomIcon className="icon" />  <span>Laundry items</span> </li>
           <li> <BarChartIcon className="icon" />   <span>Charts</span> </li>
           <li> <ReviewsIcon className="icon" />   <span>Ratings</span> </li>
-          <li><span></span></li>
+          <li><StoreMallDirectoryTwoToneIcon className="icon"></StoreMallDirectoryTwoToneIcon><span>Store locations</span></li>
 
             <p className="title">USER</p>
           <li> <SettingsIcon className="icon" />   <span>Settings</span> </li>

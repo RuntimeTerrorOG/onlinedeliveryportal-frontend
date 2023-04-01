@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Sidebar from "../../components/Sidebar";
-import DataArea from "../../components/DataArea";
+import DataArea from "../../components/DashboardDataArea";
 import "./style.scss";
 
 

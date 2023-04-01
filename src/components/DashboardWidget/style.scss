@@ -1,10 +1,24 @@
-
-
-
 .widgetBox{
-    padding:5rem;
+    width:15rem;
+    height:15rem;
+    justify-content: center;
+    align-items: center;
     border:2px solid black;
     border-radius:1rem;
-    gap:2rem;
+    display:grid;
+    grid-gap:4rem;
+
+    .widgetBoxType{
+        font-weight:bold;
+    grid:1;
+    border-bottom:1px solid black;
+    }
+    .widgetBoxNumber{
+    grid:2;
+    }
+
+-webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+
 }
 

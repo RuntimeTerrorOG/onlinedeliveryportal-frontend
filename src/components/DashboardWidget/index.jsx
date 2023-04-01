@@ -4,8 +4,11 @@ const DashboardWidget = ({name}) => {
   return (
 
         <div className="widgetBox">
-          {name}
+          
+          <div className="widgetBoxType">{name}</div>
+          <div className="WidgetBoxNumber">xx</div>
         </div>
+        
     
   )
 }
