@@ -2,6 +2,7 @@ import "./style.scss";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import LocalShippingRoundedIcon from '@mui/icons-material/LocalShippingRounded';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CheckroomIcon from '@mui/icons-material/Checkroom';
 import BarChartIcon from '@mui/icons-material/BarChart';
@@ -28,6 +29,7 @@ const Sidebar = () => {
             <p className="title">DELIVERY</p>
           <li> <LocalShippingRoundedIcon className="icon" />  <span>Deliveries</span>  </li>
           <li> <LocalShippingOutlinedIcon className="icon" /> <span>Pickups</span>  </li>
+          <li > <DescriptionOutlinedIcon/> <span>Invoices</span></li>
           <li> <LocationOnIcon className="icon" />  <span>Locations</span> </li>
 
             <p className="title">USEFUL</p>

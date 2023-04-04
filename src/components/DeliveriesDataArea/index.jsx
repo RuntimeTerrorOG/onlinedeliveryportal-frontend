@@ -1,11 +1,14 @@
+import DeliveriesDataTable from "../../components/DeliveryDataTable";
+
 import "./style.scss";
 
-const index = () => {
+const deliveriesDataTable = () => {
   return (
     <div className= "deliveryDataArea">
-        index
+
+        <DeliveriesDataTable/>
         </div>
   )
 }
 
-export default index
+export default deliveriesDataTable

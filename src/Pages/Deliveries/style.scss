@@ -1,20 +1,20 @@
 .deliveries{
     display:flex;
-    flex:6;
+    
 
     .sidebarContainer{
         flex:1;
     }
 
     .deliveryContainer{
-        flex:5;
+       flex:7;
 
         .navbarContainer{
             
-            
+            flex:1;
         }
         .deliveryTableArea{
-            
+            flex:6;
             
         }
     }
