@@ -1,5 +1,6 @@
 import React from "react";
 import DiscountCard from "../components/reusable/DiscountCard";
+import CardOfferCard from "../components/reusable/CardOfferCard";
 import '../styles/mydiscounts.css';
 
 const dis1Obj = {
@@ -29,7 +30,7 @@ const MyDiscounts = () => {
                 <div className="mydiscounts__cards">
                  <DiscountCard item={dis1Obj} />
                  <DiscountCard item={dis2Obj} />
-                 <DiscountCard item={dis3Obj} />
+                 <CardOfferCard item={dis3Obj} />
 
                     
                 </div>
