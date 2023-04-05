@@ -36,8 +36,10 @@ export const Admin = () => {
             
               <div className="logoheading"><img src='.\images\logoyellow.png' alt='' />
             </div>
+            <br></br>
 
             <p className="miniheading">Hey, Enter Your Details To Get Sign In To Your <br></br>Admin Account</p>
+            <br></br>
             <br></br>
         <form className="admin-form" onSubmit={handleSubmit}>
             
@@ -55,7 +57,7 @@ export const Admin = () => {
         </form>
         <br></br>
         <br></br>
-       <Link className="linkbtn" to="/">Back to login</Link>
+       <Link className="linkbtn" to="/login">Back to login</Link>
     </div></div>
     )
 }

@@ -1,9 +1,13 @@
+//returns an object with an Authorization header
+
 export default function authHeader() {
-    const user = JSON.parse(localStorage.getItem("user"));
-  
-    if (user && user.accessToken) {
-      // For Spring Boot back-end
-       return { Authorization: "Bearer " + user.accessToken };
-    }
-    }
-  
+
+  //JSON.parse convert the access token from a JSON string to a JavaScript object
+ const user = JSON.parse(localStorage.getItem("user"));
+
+ //checks that the user object exists and has an accessToken
+ if (user && user.accessToken) {
+ 
+    return { Authorization: "Bearer " + user.accessToken };
+ }
+ }

@@ -5,10 +5,13 @@ import { useSelector } from "react-redux";
 const Profile = () => {
   const { user: currentUser } = useSelector((state) => state.auth);
 
+
+  //check whether a user is authenticated or not, if not redirect to 'login' page
   if (!currentUser) {
     return <Navigate to="/login" />;
   }
 
+  
   return (
     <div className="container">
       <header className="jumbotron">

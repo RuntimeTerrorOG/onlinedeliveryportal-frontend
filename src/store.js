@@ -8,7 +8,7 @@ const reducer = {
 }
 
 const store = configureStore({
-  reducer: reducer,
+  reducer: reducer, //inside this 'reducer' above 'const reducer' included
   devTools: true,
 })
 

@@ -16,43 +16,65 @@ import  Admin  from './components/Admin';
 import ForgotPassword from './components/ForgotPassword';
 import  ResetPassword  from './components/ResetPassword';
 
-
-
 import { logout } from "./slices/auth";
 
 import EventBus from "./common/EventBus";
 
+
+
+
 const App = () => {
+  //'useState' used to declare and initialize three state variables
   const [showDeliveryPersonBoard, setShowDeliveryPersonBoard] = useState(false);
   const [showAdminBoard, setShowAdminBoard] = useState(false);
 
+  //'useSelector' is used to retrieve data from the Redux store
   const { user: currentUser } = useSelector((state) => state.auth);
+  
+  // Get 'dispatch' function from Redux store using the 'useDispatch' hook
   const dispatch = useDispatch();
 
+
+  //a function for 'logging out' and 'dispatch' it when needed
   const logOut = useCallback(() => {
     dispatch(logout());
   }, [dispatch]);
 
   useEffect(() => {
+
+    //set the 'showDeliveryPersonBoard' and 'showAdminBoard' state variables based on their 'roles'
     if (currentUser) {
       setShowDeliveryPersonBoard(currentUser.roles.includes("ROLE_DELIVERY"));
       setShowAdminBoard(currentUser.roles.includes("ROLE_ADMIN"));
-    } else {
+    } 
+    
+    // If no current user, hide the delivery and admin boards
+    else {
       setShowDeliveryPersonBoard(false);
       setShowAdminBoard(false);
     }
 
+
+    // Set up an event listener to log out when a "logout" event is emitted
     EventBus.on("logout", () => {
       logOut();
     });
 
+    // Clean up any event listeners or timers set up in the effect
     return () => {
       EventBus.remove("logout");
     };
   }, [currentUser, logOut]);
 
+
+
+
+  
   return (
     <Router>
+
+      {/*navbar from here*/}
+
       <div>
         <nav className="navbar navbar-expand bg-color">
           <Link to={"/"} className="navbar-brand">
@@ -68,7 +90,7 @@ const App = () => {
             {showDeliveryPersonBoard && (
               <li className="nav-item">
                 <Link to={"/delivery"} className="nav-link">
-                  Delivery Person Board
+                  DeliveryPerson Board
                 </Link>
               </li>
             )}
@@ -119,6 +141,11 @@ const App = () => {
             </div>
           )}
         </nav>
+
+
+
+
+        {/* path to the releavent pages */}
 
         <div className="container mt-3">
           <Routes>

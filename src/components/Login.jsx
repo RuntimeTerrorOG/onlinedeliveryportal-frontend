@@ -8,26 +8,36 @@ import { login } from "../slices/auth";
 const Login = () => {
   let navigate = useNavigate();
 
+  //'useState' used to declare and initialize three state variables
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({ username: "", password: "" });
   const [errors, setErrors] = useState({});
 
+  //'useSelector' is used to retrieve data from the Redux store
   const { isLoggedIn } = useSelector((state) => state.auth);
   const { message } = useSelector((state) => state.message);
 
+  // Get 'dispatch' function from Redux store using the 'useDispatch' hook
   const dispatch = useDispatch();
 
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
+
+
+  // called when the user submits the login form
   const handleLogin = (event) => {
+
+    // first sets loading to true
     event.preventDefault();
     setLoading(true);
     setErrors({});
 
     const { username, password } = formData;
 
+    // checks whether the 'username' and 'password' fields are empty
+    // if either fields empty gives an error message and sets 'loading' back to false
     if (!username) {
       setErrors({ ...errors, username: "This username is required!" });
       setLoading(false);
@@ -40,17 +50,23 @@ const Login = () => {
       return;
     }
 
+    // if both filled out dispatches the login action with the 'username' and 'password'
     dispatch(login({ username, password }))
       .unwrap()
+
+      // if login success redirected to the '/profile' page and refresh the page
       .then(() => {
         navigate("/profile");
         window.location.reload();
       })
+      // if login failed 'loading' is set back to false
       .catch(() => {
         setLoading(false);
       });
   };
 
+
+  // if user already looged in user is redirected to the '/profile' page using the 'Navigate' component.
   if (isLoggedIn) {
     return <Navigate to="/profile" />;
   }
@@ -93,6 +109,7 @@ const Login = () => {
           </form>
 
           <p className="paragraph">Don't have an account? <Link className="linkbtn" to="/register">Register here</Link></p>
+          
           {message && (
           <div className="alert alert-success" role="alert">
             {message}

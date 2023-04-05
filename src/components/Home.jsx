@@ -5,20 +5,24 @@ import UserService from "../services/user.service";
 const Home = () => {
   const [content, setContent] = useState("");
 
+  // 'useEffect' hook to fetch public content from the server when the component mounts
   useEffect(() => {
-    UserService.getPublicContent().then(
-      (response) => {
+
+    // Call the 'getPublicContent' method from the 'UserService' module
+    UserService.getPublicContent()
+
+      // If successful, update the 'content' state variable with the response data
+      .then((response) => {
         setContent(response.data);
-      },
-      (error) => {
+      })
+      // If fails, update the 'content' state variable with the error message
+      .catch((error) => {
         const _content =
           (error.response && error.response.data) ||
           error.message ||
           error.toString();
-
         setContent(_content);
-      }
-    );
+      });
   }, []);
 
   return (

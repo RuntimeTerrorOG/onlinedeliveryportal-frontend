@@ -6,11 +6,18 @@ import EventBus from "../common/EventBus";
 const BoardUser = () => {
   const [content, setContent] = useState("");
 
+  // Use the 'useEffect' hook to fetch admin content from the server when the component mounts
   useEffect(() => {
+
+    // Call the 'getUserBoard' method from the 'UserService' module
     UserService.getUserBoard().then(
+
+      // If successful, update the state with the response data
       (response) => {
         setContent(response.data);
       },
+
+      // If fails, update the state with the error message
       (error) => {
         const _content =
           (error.response &&
@@ -21,6 +28,7 @@ const BoardUser = () => {
 
         setContent(_content);
 
+        // If the error status code is 401 (unauthorized), dispatch an event to logout the user
         if (error.response && error.response.status === 401) {
           EventBus.dispatch("logout");
         }
