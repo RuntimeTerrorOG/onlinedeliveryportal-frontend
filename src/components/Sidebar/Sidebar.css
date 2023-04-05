@@ -23,7 +23,7 @@
     display:flex;
     align-items: center;
     column-gap: 0.35rem;
-    color: white; 
+    color: var(--font-color); 
     font-size: 34px;
     font-weight: 1000 !important;
    
@@ -50,7 +50,7 @@
 }
 
 .profile h3{
-    color: #fff;
+    color: var(--font-color);
     font-size: 35px;
     margin-left: 20px;
 }
@@ -82,7 +82,7 @@
 }
 
 .sidebar__bottom span{
-    color: white;
+    color: var(--font-color);
     cursor: pointer;
     font-size: 20px;
     margin-top: 50px;
@@ -90,19 +90,19 @@
 }
 
 .sidebar__bottom span i{
-    color: white;
+    color: var(--font-color);
 }
 
 .nav__list{
     display: flex;
     row-gap: 2.5rem ;
     flex-direction: column;
-    color: white;
+    color: var(--font-color);
     font-size: 20px;
 }
 
 .nav__link i {
-    color: var(--secondary-color);
+    color: var(--font-color);
 }
 
 .nav__active{
