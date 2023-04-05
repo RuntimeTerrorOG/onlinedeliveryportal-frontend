@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import './top-nav.css';
 
 
@@ -19,7 +19,7 @@ const TopNav = () => {
                 <span className="badge">1</span>
                 </span>
                 <span className="settings"><i className="ri-settings-4-line"></i></span>
-                <span className="profile1"><i className="ri-user-line"></i></span>
+                <span className="profile1"><Link to ='/myprofile'><i className="ri-user-line"></i></Link></span>
                 
             </div>
         </div>
