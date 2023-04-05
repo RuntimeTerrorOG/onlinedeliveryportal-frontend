@@ -13,7 +13,7 @@ function createData(orderId, description, serviceName , price, pickupDate, deliv
 
 const rows = [
   createData(4366, 'Dress - Casual', 'Dry Clean', 'Rs.350.00', '03.02.2023', '06.02.2023', 'Pending' ),
-  createData(4367, 'Shirt on Hanger', 'Washed, Pressed & Hung', 'Rs.220.00', '03.02.2023','06.02.2023', 'Pending'),
+  createData(4367, 'Shirt on Hanger', 'Washed, Pressed & Hung', 'Rs.220.00', '06.04.2023','10.04.2023', 'Approved'),
   
 ];
 
