@@ -1,8 +1,7 @@
-
-
 .dashboard{
     margin-top: 100px;
     padding: 0px 30px;
+    
 }
 
 .dashboard h2{
@@ -37,21 +36,21 @@
 
 
 .card__content h4 {
-    color: var(--heading-color);
+    color: var(--font-color);
     font-size: 2rem;
     font-weight: 400;
 
 }
 
 .card__content span {
-    color: var(--heading-color);
+    color: var(--font-color);
     font-size: 2.5rem;
 }
 
 .card__icon {
     font-size: 4rem;
     font-weight: 400 !important;
-    color: rgba(255,255,255,0.845);
+    color: var(--font-color);
 }
 
 .dashboard__cards{
@@ -60,3 +59,5 @@
     column-gap: 2rem;
 
 }
+
+
