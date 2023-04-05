@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 
 const App = () => {
-  const {productItems} = data;
+  const { productItems } = data;
   const [cartItems, setCartItems]= useState([]);
   const handleAddProduct = (product) =>{
     const ProductExist = cartItems.find((item) => item.id === product.id);
@@ -41,24 +41,25 @@ const App = () => {
 
   };
 
-  const handleCartClearance = ()=>{
+  const handleCartClearence = ()=>{
     setCartItems([]);
 
   }
-
-
+ 
 
   return (
    <div>
     <Router>
       <Header cartItems={cartItems}/>
-      <Route1
+      
+      <Route1 
       productItems={productItems} 
       cartItems={cartItems} 
       handleAddProduct={handleAddProduct}
       handleRemoveProduct={handleRemoveProduct}
-      handleCartClearance={handleCartClearance}
+      handleCartClearence={handleCartClearence}
       />
+     
      
     </Router> 
    </div>

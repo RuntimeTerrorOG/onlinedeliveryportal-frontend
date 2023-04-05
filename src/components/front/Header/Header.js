@@ -6,22 +6,15 @@ import "./Header.css";
 const Header = ({cartItems}) => {
   return (
     <header className="header">
-      <div>
+      <div className="logo">
         <h1>
-          <Link to="/" className="logo">
-            Laundry Mart
-          </Link>
+          Laundry Mart
         </h1>
       </div>
       <div className="header-links">
         <ul>
           <li>
-            <Link to="/">Order</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link to="/contactus">Contactus</Link>
+            <Link to="/order">Order</Link>
           </li>
         </ul>
         <ul>
@@ -29,11 +22,11 @@ const Header = ({cartItems}) => {
             <Link to="/cart">Cart</Link>
             <span className="cart-length">
               {cartItems.length === 0 ?"":cartItems.length}
-              
+            
             </span>
+            
           </li>
         </ul>
-
       </div>
     </header>
   
