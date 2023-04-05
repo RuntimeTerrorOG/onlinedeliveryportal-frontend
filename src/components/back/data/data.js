@@ -1,6 +1,6 @@
 
 const data = {
-    productItems:[
+    productItems:[//array of product items
         {
             id: "1",
             name: "T-Shirt",

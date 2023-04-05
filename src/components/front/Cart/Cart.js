@@ -1,14 +1,14 @@
 import React from "react";
 import "./Cart.css";
 
-const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClearence}) => {
-  const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0);
+const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClearence}) => {//component takes 4 props
+  const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0);//calculate total price of items
   return (
     <div className="cart-items">
       <h2 className="cart-items-header">Cart Items</h2>
        <div className="clear-cart">
         {cartItems.length >=1 && (
-          <button className="clear-cart-button" onClick={handleCartClearence}>
+          <button className="clear-cart-button" onClick={handleCartClearence}>{/*button shown when cart is not empty*/}
           Clear Cart
           </button>
           )
@@ -28,13 +28,13 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
            />
         <div className="cart-items-name">{item.name}</div>
         <div className="cart-items-function">
-          <button
+          <button //to increase item quantity
            className="cart-items-add" 
            onClick={() => handleAddProduct(item)}
            >
-            +
+            + 
           </button>
-          <button
+          <button //to decrease item quantity
             className="cart-items-remove"
             onClick={() => handleRemoveProduct(item)}
             >

@@ -5,12 +5,12 @@ import Category from "../Category/Category";
 const Home = ({productItems, handleAddProduct}) => {    
   return (
    <div className="products">
-    <Category/>
+    <Category/>{/*rendering the category component*/}
     
    
      {productItems.map((productItem)=>(
       <div>
-        {productItem.category==="Home"&&(
+        {productItem.category==="Home"&&(//render only those items which have category equal to "Home"
       
             <div className="card">
             <div>

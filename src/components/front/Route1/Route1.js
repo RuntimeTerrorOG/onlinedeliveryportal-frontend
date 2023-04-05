@@ -9,7 +9,7 @@ import Kids from "../Kids/Kids";
 import Home from "../Home/Home";
 
 
-const Route1 = ({
+const Route1 = ({ //takes props as inputs
   productItems,
   cartItems, 
   handleAddProduct, 
@@ -18,9 +18,9 @@ const Route1 = ({
  }) => {
   return (
     <div>
-     <Routes>
+     <Routes> {/*provide navigation between different components*/}
         <Route path="/order" element={<Products productItems={productItems} handleAddProduct={handleAddProduct} />} />
-        <Route path="/order" element={<Category/>}/>
+        <Route path="/order" element={<Category/>}/> 
         <Route path="/all" element={<Products productItems={productItems} handleAddProduct={handleAddProduct} />} />
         <Route path="/gen" element={<Gents productItems={productItems} handleAddProduct={handleAddProduct} />} />
         <Route path="/ladies" element={<Ladies productItems={productItems} handleAddProduct={handleAddProduct} />} />

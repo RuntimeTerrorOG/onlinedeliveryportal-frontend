@@ -2,11 +2,11 @@ import React from "react";
 import "./Products.css";
 import Category from "../Category/Category";
 
-const Products = ({productItems, handleAddProduct }) => {
+const Products = ({productItems, handleAddProduct }) => {//take 2 props
   return (
     <div className="products">
       <Category/>
-      {productItems.map((productItem)=>(
+      {productItems.map((productItem)=>( //renders list of product items as cards
         <div className="card">
           <div>
             <img
@@ -20,7 +20,7 @@ const Products = ({productItems, handleAddProduct }) => {
          </div>
          <div className="product-price">Rs.{productItem.price}</div>
          <div>
-          <button className="product-add-button" onClick={()=>handleAddProduct(productItem)}>Add to cart</button>
+          <button className="product-add-button" onClick={()=>handleAddProduct(productItem)}>Add to cart</button> {/*calls handleAddProduct function when clicked button*/}
          </div>
         </div>
       ))}

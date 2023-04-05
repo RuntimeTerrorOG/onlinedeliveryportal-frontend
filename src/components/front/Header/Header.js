@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";//import link component from react-router-dom library
 import "./Header.css";
 
 
-const Header = ({cartItems}) => {
+const Header = ({cartItems}) => {//takes cartItems prop
   return (
     <header className="header">
       <div className="logo">
@@ -21,7 +21,7 @@ const Header = ({cartItems}) => {
           <li>
             <Link to="/cart">Cart</Link>
             <span className="cart-length">
-              {cartItems.length === 0 ?"":cartItems.length}
+              {cartItems.length === 0 ?"":cartItems.length} {/*number of items in the cart*/}
             
             </span>
             
