@@ -1,7 +1,7 @@
 import React from "react";
 
 
-
+// Define a functional component called Card
 const Card = () => {
  return(  
 <div className = "card">                   
@@ -13,7 +13,7 @@ const Card = () => {
 
           <div className="card__actions">
              <button className="card__btn">View</button>
-             <a href="#"></a>
+             <a href="#"></a>      {/* Add an empty link for accessibility */}
         </div>
           
 </div>

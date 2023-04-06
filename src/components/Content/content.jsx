@@ -5,7 +5,7 @@ import logo1 from '../../assets/images/hnb.gif';
 import logo2 from '../../assets/images/sampath-bank.png';
 import Card2 from "../Card2/Card2";
 
-
+// Define two objects with properties for the Card2 component
 const card1Obj = {
     date: '30th - 31st Mar',
     description: <p>20% Credit<br/> 10% Debit </p>,
@@ -18,8 +18,10 @@ const card2Obj = {
     logo: <img src={logo2} alt="logo"/>
 };
 
-
+// Define a functional component called Content
 const Content = () =>{
+
+ // Render the component   
     return(
 <div className="content">
 
@@ -56,7 +58,6 @@ const Content = () =>{
 };
 
 export default Content;
-
 
 
 

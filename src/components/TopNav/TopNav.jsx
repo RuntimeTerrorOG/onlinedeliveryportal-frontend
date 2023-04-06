@@ -3,8 +3,10 @@ import './TopNav.css';
 import logo from '../../assets/images/logo.jpeg';
 import basket from '../../assets/images/basket.png';
 
-
+// Define a functional component called TopNav
 const TopNav = () => {
+
+    // Render the component
     return <div className="top__nav">
         
         <div className="top__nav-left">
@@ -41,3 +43,6 @@ const TopNav = () => {
 };
 
 export default TopNav;
+                
+                    
+        
