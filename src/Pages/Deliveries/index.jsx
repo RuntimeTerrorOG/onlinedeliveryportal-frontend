@@ -10,6 +10,7 @@ const Deliveries = () => {
 
       <div className="sidebarContainer">
         <Sidebar/>
+
       </div>
 
       <div className="deliveryContainer">
@@ -18,9 +19,16 @@ const Deliveries = () => {
           <Navbar/>
         </div>
 
+        <div className="DeliveryDateContainer">
+          
+        </div>
+
         <div className="deliveryTableArea">
             <DeliveriesDataArea/>
         </div>
+
+        
+
       </div>
       
         

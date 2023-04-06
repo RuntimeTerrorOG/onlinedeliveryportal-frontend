@@ -1,5 +1,38 @@
 .deliveryDataTable{
     display:flex;
     height:600px;
-    padding:50px;
+    padding:35px;
+
+    .status{
+        display:flex;
+        gap:1rem;
+        font-weight:bold;
+
+        .cellStatusDelivered{
+            border:2px solid black;
+            padding:0.25rem;
+            background-color: rgb(169, 243, 169);
+            border-radius:5px;
+            color:green;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(0, 255, 0);
+            }
+            
+        }
+        .cellStatusPending{
+            border:2px solid black;
+            padding:0.25rem;
+            background-color: rgb(255, 160, 160);
+            border-radius:5px;
+            color:red;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(172, 6, 6);
+            }
+            
+        }
+    }
 }

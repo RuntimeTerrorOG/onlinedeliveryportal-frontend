@@ -2,17 +2,17 @@
 
 export const deliveryCols = [
 
-    {field:'invoiceNo', headerName:'Invoice No', width: 100},
-    {field: 'customerName', headerName: 'Customer Name', width: 150},
-    {field:'address', headerName:'Address', width:300},
-    {field:'payment', headerName:'Payment', width: 150},
-    {field:'status', headerName:'Status', width: 150,
-         renderCell: (params) => {
-        <div>
-        <div className="cellStatusDelivered"> {params.row.status}</div>
-        <div className="cellStatusPending"> {params.row.status}</div>
+    {field:'invoiceNo', headerName:'Invoice No', width: 150},
+    {field: 'customerName', headerName: 'Customer Name', width: 200},
+    {field:'address', headerName:'Address', width:350},
+    {field:'payment', headerName:'Payment', width: 200},
+    {field:'status', headerName:'Status', width: 300,
+         renderCell: (params) => (
+        <div className="status">
+        <div className="cellStatusDelivered"> {params.row.cellStatusDelivered}</div>
+        <div className="cellStatusPending"> {params.row.cellStatusPending}</div>
         </div>
-         },
+         ),
     },
 ];
 
@@ -20,17 +20,19 @@ export const deliveryRows = [
     {
     id:'1',
     invoiceNo: 'vh-001',
-    customerName: 'John Doe',
-    address: 'No. 1, Jalan 1, Taman 1, 12345, Kuala Lumpur',
-    payment: 'Cash',
-    status: 'Delivered',
+    customerName: 'Sumith Perera',
+    address: 'No. 10, 1st lane,battaramulla',
+    payment: '5000',
+    cellStatusDelivered: 'Delivered',
+    cellStatusPending: 'Pending',
     },
     {
     id:'2',
     invoiceNo: 'vh-002',
-    customerName: 'Jane Doe',
-    address: 'No. 2, Jalan 2, Taman 2, 12345, Kuala Lumpur',
-    payment: 'Credit Card',
-    status: 'Delivered',
+    customerName: 'S.C.W. Herath',
+    address: 'No. 221, Jalan,Samagi mawatha, 12345, Kottawa',
+    payment: '-',
+    cellStatusDelivered: 'Delivered',
+    cellStatusPending: 'Pending',
     },
 ];

@@ -7,15 +7,28 @@
     }
 
     .deliveryContainer{
+        
        flex:7;
-
+       
         .navbarContainer{
-            
             flex:1;
+            
+        }
+
+        .deliveryDateContainer{
+            flex:6;
+           
+
         }
         .deliveryTableArea{
-            flex:6;
             
+            
+        }
+
+        .deliveryInvoiceContainer{
+            
+         border:1px solid black;
+         
         }
     }
 

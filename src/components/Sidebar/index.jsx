@@ -11,23 +11,33 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import LogoutIcon from '@mui/icons-material/Logout';
 import StoreMallDirectoryTwoToneIcon from '@mui/icons-material/StoreMallDirectoryTwoTone';
 
+import {Link} from 'react-router-dom';
+
 const Sidebar = () => {
   return (
     <div className = "sidebar">
 
       <div className="top">
-        <span className ="logo">Delivery</span>
+        <Link to="/" style={{textDecoration:"none"}}>
+        <span className ="logo">DRIVER</span>
+        </Link>
+        
       </div>
 
-      {/* <hr/> */}
+      
 
       <div className="center">
         <ul>
+
+        <Link to="/" style={{textDecoration:"none"}}>
             <p className="title">DASHBOARD</p>
           <li> <DashboardIcon className="icon" />  <span>Dashboard</span> </li>
+        </Link>
 
             <p className="title">DELIVERY</p>
+            <Link to="/Deliveries" style={{textDecoration:"none"}}>
           <li> <LocalShippingRoundedIcon className="icon" />  <span>Deliveries</span>  </li>
+          </Link>
           <li> <LocalShippingOutlinedIcon className="icon" /> <span>Pickups</span>  </li>
           <li > <DescriptionOutlinedIcon/> <span>Invoices</span></li>
           <li> <LocationOnIcon className="icon" />  <span>Locations</span> </li>
