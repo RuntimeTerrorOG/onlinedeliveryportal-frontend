@@ -6,7 +6,7 @@ const History = () => {
         <div className="history">
             <h2>History</h2>
 
-            <Table />
+            <Table />          {/*imports the table2 component*/}
         </div>
     )
 }

@@ -8,8 +8,8 @@ const MyProfile = () => {
 
             <div className="myprofile__wrapper">
                 
-
-        <div className="details__form">
+               
+        <div className="details__form">        {/*form to collect data*/}
           <h2 className="profile__title">Your Details</h2>
           <p className="profile__desc">
             Update your photo and personal details here
@@ -66,7 +66,7 @@ const MyProfile = () => {
                 <p className="profile-img__desc">
                   This will be displayed in your profile
                 </p>
-                <input type="file" placeholder="choose file" />
+                <input type="file" placeholder="choose file" />   {/*uploading the profile image*/}
               </div>
 
               <div className="profile__img-btns">
@@ -76,8 +76,8 @@ const MyProfile = () => {
             </div>
           </form>
         </div>
-          </div>
-        </div>
+       </div>
+      </div>
     );
 };
 export default MyProfile;
