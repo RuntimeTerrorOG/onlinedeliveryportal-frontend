@@ -1,5 +1,6 @@
 import React from "react";
 
+//Destructure the title, description and icon from the props object
 const DiscountCard = (props) => {
 
     const {title, description, icon} = props.item
@@ -14,11 +15,13 @@ const DiscountCard = (props) => {
                             </span>
                             <div className="discard__actions">
                             <button className="discard__btn">Get My Coupon Code</button>
-                            <a href="#"></a>
+                            <a href="#"></a>     {/*This link doesn't have any text or content*/}
         </div>
                     </div>
     );
 };
 
 export default DiscountCard;
+
+
 

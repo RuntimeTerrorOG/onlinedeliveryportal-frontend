@@ -1,3 +1,6 @@
+/*CSS styles for the sidebar component*/
+
+/*Set the width, height, position and background of the sidebar*/
 .sidebar{
     width: 281px;
     height: 100%;
@@ -9,6 +12,7 @@
     padding: 0px 30px;
 }
 
+/*Style for the top section of the sidebar*/
 .sidebar__top{
     display: flex;
     flex-direction: row;
@@ -19,6 +23,7 @@
 
 }
 
+/*Styles for the title of the sidebar*/
 .title{
     display:flex;
     align-items: center;
@@ -29,6 +34,7 @@
    
 }
 
+/*Styles for the logo image*/
 .logo img{
     width: 70px;
     height: 70px;
@@ -37,7 +43,7 @@
     margin-right: 2px;
 }
 
-
+/*Styles for the profile image*/
 .profile img{
     width: 150px;
     height: 150px;
@@ -49,13 +55,14 @@
     margin-left: 25px;
 }
 
+/*Styles for the profile name*/
 .profile h3{
     color: var(--font-color);
     font-size: 35px;
     margin-left: 20px;
 }
 
-
+/*Styles for the sidebar content*/
 .sidebar__content {
     display: flex;
     justify-content: space-between;
@@ -64,15 +71,17 @@
     margin-top: 50px;
 }
 
+/*Styles for the menu items*/
 .menu{
     height: 80%;
 }
 
-
+/*Styles for the bottom section of the sidebar*/
 .sidebar__bottom {
     height: 20%;
 }
 
+/*Styles for the navigation links and the span elements*/
 .nav__link, 
 .sidebar__bottom span{
     display: flex;
@@ -81,6 +90,7 @@
     cursor: pointer;
 }
 
+/* Styles for the span element in the bottom section of the sidebar */
 .sidebar__bottom span{
     color: var(--font-color);
     cursor: pointer;
@@ -89,10 +99,12 @@
 
 }
 
+/* Styles for the icon in the span element in the bottom section of the sidebar */
 .sidebar__bottom span i{
     color: var(--font-color);
 }
 
+/* Styles for the navigation list */
 .nav__list{
     display: flex;
     row-gap: 2.5rem ;
@@ -101,10 +113,12 @@
     font-size: 20px;
 }
 
+/* Styles for the icon in the navigation links */
 .nav__link i {
     color: var(--font-color);
 }
 
+/* Styles for the active navigation link */
 .nav__active{
     color: rgb(78, 98, 223);
     background: #b7ffe913;
@@ -113,3 +127,6 @@
     ;
 
 }
+   
+
+

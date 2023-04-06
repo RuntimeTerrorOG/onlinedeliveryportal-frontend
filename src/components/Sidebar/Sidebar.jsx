@@ -7,40 +7,38 @@ import profileImg from '../../assets/images/user-286.png';
 import logo from '../../assets/images/logo.jpeg';
 
 const Sidebar = () => {
-
-    
-   
     return  (
     <div className="sidebar">
-        <div className="sidebar__top">
-        
-            
+
+        <div className="sidebar__top">    {/*sidebar top*/}
+
             <div className="logo">
                
                <img src={logo} alt=""/>
               
-               </div>
+            </div>
                    <div className="title">
+
                     LAUNDRY MART
+
                     </div>
+                   
             
-                    </div>
+        </div>
             
             
-            <div className="profile">
+            <div className="profile">            {/*profile*/}
                
                     <span>
-                    <Link to ='/myprofile'><img src={profileImg} alt=""/></Link>
+                        <Link to ='/myprofile'><img src={profileImg} alt=""/></Link>
                     </span>
-                    <h3>
-                      Hello, Ann
-                      </h3>
-                </div>
+                          <h3>
+                          Hello, Ann
+                          </h3>
+            </div>
             
 
-       
-
-        <div className ="sidebar__content" >
+        <div className ="sidebar__content" >        {/*sidebar content*/}
             <div className="menu">
                 <ul className="nav__list">
                     {navLinks.map((item,index) => (
@@ -51,7 +49,6 @@ const Sidebar = () => {
                                 navClass.isActive ? "nav__active nav__link" : "nav__link"
                             }
                             >
-                                
                                 <i className={item.icon}></i>
                             
                             {item.Display}
@@ -62,7 +59,7 @@ const Sidebar = () => {
                 </ul>
             </div>
 
-            <div className="sidebar__bottom">
+            <div className="sidebar__bottom">            {/*sidebar bottom*/}
                 <span>
                     <i className="ri-logout-circle-r-line"></i> Logout
                 </span>

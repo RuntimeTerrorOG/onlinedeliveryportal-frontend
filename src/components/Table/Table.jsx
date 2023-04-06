@@ -1,3 +1,4 @@
+// Importing React and necessary Material-UI components
 import * as React from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -7,16 +8,20 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import "./Table.css";
+
+// Function to create a row of data with given parameters
 function createData(orderId, description, serviceName , price, pickupDate, deliveryDate, status) {
   return { orderId, description, serviceName , price, pickupDate, deliveryDate, status };
 }
 
+// Creating rows of data using createData function
 const rows = [
   createData(4366, 'Dress - Casual', 'Dry Clean', 'Rs.350.00', '03.02.2023', '06.02.2023', 'Pending' ),
   createData(4367, 'Shirt on Hanger', 'Washed, Pressed & Hung', 'Rs.220.00', '06.04.2023','10.04.2023', 'Approved'),
   
 ];
 
+// Function to set style based on status
 const makeStyle=(status)=>{
   if(status === 'Approved')
   {
@@ -40,9 +45,12 @@ const makeStyle=(status)=>{
   }
 }
 
-export default function BasicTable() {
+// React component for displaying a basic table with the rows of data
+export default function BasicTable() {      
   return (
-    <div className="Table">
+    
+     // Styling the container for the table
+    <div className="Table">         
         <h2>Order Status</h2>
    
     <TableContainer component={Paper}
@@ -61,7 +69,7 @@ export default function BasicTable() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map((row) => (
+          {rows.map((row) => (                  //loop through the 'rows' array and render each object as a table row
             <TableRow
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -75,7 +83,7 @@ export default function BasicTable() {
               <TableCell align="left">{row.pickupDate}</TableCell>
               <TableCell align="left">{row.deliveryDate}</TableCell>
               <TableCell align="left">
-                <span className="status" style={makeStyle(row.status)}>{row.status}</span>
+                <span className="status" style={makeStyle(row.status)}>{row.status}</span> {/*styles based on the status of the order*/}
               </TableCell>
               
             </TableRow>
@@ -86,3 +94,5 @@ export default function BasicTable() {
     </div>
   );
 }
+    
+                

@@ -1,5 +1,6 @@
 import React from "react";
 
+//Destructure the title, totalNumber an icon from the props object
 const SingleCard = (props) => {
 
     const {title, totalNumber, icon} = props.item
@@ -17,4 +18,3 @@ const SingleCard = (props) => {
 };
 
 export default SingleCard;
-

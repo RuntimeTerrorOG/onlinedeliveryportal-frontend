@@ -3,14 +3,14 @@ import Router from "../../routes/Router";
 import Sidebar from "../Sidebar/Sidebar";
 import TopNav from "../TopNav/TopNav"
 
-const Layout = () => {
+const Layout = () => {                       //new component layout
     return  (
     <div className="layout">
-        <Sidebar/>
+        <Sidebar/>                          {/*renders the sidebar component*/}
         <div className="main__layout">
-            <TopNav/>
+            <TopNav/>                       {/*renders the sidebar component*/}
             <div className="content">
-                <Router/>
+                <Router/>                   {/*renders the sidebar component*/}
             </div>
         </div>
     </div>
