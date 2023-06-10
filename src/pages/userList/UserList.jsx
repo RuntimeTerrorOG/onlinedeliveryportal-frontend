@@ -9,16 +9,24 @@ export default function UserList() {
   const [admins, setAdmins] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/admins").then((response) => {
-      setAdmins(response.data);
-    });
+    axios.get("http://localhost:8080/admins")
+      .then((response) => {
+        setAdmins(response.data);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   }, []);
 
-  const handleDelete = (id) => {
-    axios.delete(`http://localhost:8080/admins/${id}`).then(() => {
+ const handleDelete = (id) => {
+  axios.delete(`http://localhost:8080/admins/${id}`)
+    .then(() => {
       setAdmins(admins.filter((admin) => admin.id !== id));
+    })
+    .catch((error) => {
+      console.error("Error:", error);
     });
-  };
+};
 
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
