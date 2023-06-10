@@ -17,9 +17,9 @@ export default function Faq() {
     event.preventDefault();
 
     const re = /(.|\s)*\S(.|\s)*/gim;
-    if (!re.test(data.answer1)) {
+    if (!re.test(data.answer)) {
       alert("You have Not entered an answer ");
-      setData((prev) => ({ ...prev, answer1: "" }));
+      setData((prev) => ({ ...prev, answer: "" }));
     }
 
     var myHeaders = new Headers();

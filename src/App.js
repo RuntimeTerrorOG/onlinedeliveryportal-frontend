@@ -12,6 +12,7 @@ import LineChart from "./pages/lineChart/LineChart";
 import CustomerList from "./pages/customerList/CustomerList";
 import BarChart from "@mui/icons-material/BarChart";
 import Faq from "./pages/faq/Faq";
+import Feedback  from "./pages/feedback/Feedback";
 
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
           </Route>
           <Route path="/faq">
             <Faq />
+          </Route>
+          <Route path="/feedback">
+            <Feedback />
           </Route>
         </Switch>
       </div>

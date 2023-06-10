@@ -72,7 +72,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li className="sidebarListItem">
-              <Link to="/" style={{color: 'grey'}}>
+              <Link to="/feedback" style={{color: 'grey'}}>
                 <DynamicFeedIcon className="sidebarIcon" />
                 Feedback
               </Link>
