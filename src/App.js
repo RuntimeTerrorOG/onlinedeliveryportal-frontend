@@ -10,7 +10,9 @@ import NewProduct from "./pages/newProduct/NewProduct";
 import UserList from "./pages/userList/UserList";
 import LineChart from "./pages/lineChart/LineChart";
 import CustomerList from "./pages/customerList/CustomerList";
-import { BarChart, Bar } from "recharts";
+import BarChart from "@mui/icons-material/BarChart";
+import Faq from "./pages/faq/Faq";
+
 
 function App() {
   return (
@@ -41,10 +43,13 @@ function App() {
             <NewProduct />
           </Route>
           <Route path="/Linechart">
-            <LineChart />
-            <BarChart>
-              <Bar dataKey="value" fill="#8884d8" />
-            </BarChart>
+            <LineChart /> 
+          </Route>
+          <Route path="/Barchart">
+          <BarChart /> 
+          </Route>
+          <Route path="/faq">
+            <Faq />
           </Route>
         </Switch>
       </div>

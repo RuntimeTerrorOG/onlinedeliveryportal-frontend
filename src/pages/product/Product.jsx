@@ -24,12 +24,10 @@ export default function Product() {
               </div>
               <div className="productInfoBottom">
                   <div className="productInfoItem">
-                      <span className="productInfoKey">Product ID:</span>
-                      <span className="productInfoValue">04</span>
                   </div>
                   <div className="productInfoItem">
                       <span className="productInfoKey">sales:</span>
-                      <span className="productInfoValue">300</span>
+                      <span className="productInfoValue">120</span>
                   </div>
                   <div className="productInfoItem">
                       <span className="productInfoKey">Price:</span>

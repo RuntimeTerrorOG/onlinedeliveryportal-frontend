@@ -28,6 +28,7 @@ export default function NewUser() {
       setData((prev) => ({ ...prev, email: "" }));
     }
 
+  
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
@@ -48,7 +49,7 @@ export default function NewUser() {
 
   return (
     <div className="newUser">
-      <h1 className="newUserTitle">New User</h1>
+      <h1 className="newUserTitle">New Employee</h1>
       <form className="newUserForm">
         <div className="newUserItem">
           <label>Username</label>

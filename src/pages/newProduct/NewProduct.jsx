@@ -12,9 +12,16 @@ export default function NewProduct() {
   
       setData(_data);
     };
-  
+
     const handleSubmit = (event) => {
       event.preventDefault();
+  
+      const re = /^(?:0|[1-9]\d*)(?:\.\d+)?$/gim;
+      if (!re.test(data.price)) {
+        alert("Can not be minus value");
+        setData((prev) => ({ ...prev, price: "" }));
+      }
+  
       var myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/json");
   
@@ -66,10 +73,10 @@ export default function NewProduct() {
         <div className="addProductItem">
           <label>Category</label>
           <input
-            onChange={(e) => handleChange("Category", e)}
+            onChange={(e) => handleChange("category", e)}
             type="text"
             placeholder="other"
-            value={data.Category}
+            value={data.category}
           />
         </div>
         <button className="newUserButton" onClick={handleSubmit}>

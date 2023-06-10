@@ -22,7 +22,6 @@ export default function CustomerList() {
       renderCell: (params) => {
         return (
           <div className="customerListUser">
-            <img className="customerListImg" src={params.row.avatar} alt="" />
             {params.row.username}
           </div>
         );

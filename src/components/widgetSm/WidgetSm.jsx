@@ -13,35 +13,35 @@ export default function WidgetSm() {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <span className="widgetSmUsername">Jude belligham</span>
-          </div>
-          <button className="widgetSmButton">
-            <VisibilityIcon className="widgetSmIcon" />
-            View detailes
-          </button>
-        </li>
-        <li className="widgetSmListItem">
-          <img
-            src=""
-            alt=""
-            className="widgetSmImg"
-          />
-          <div className="widgetSmUser">
-            <span className="widgetSmUsername">camila cabello</span>
-          </div>
-          <button className="widgetSmButton">
-            <VisibilityIcon className="widgetSmIcon" />
-            View detailes
-          </button>
-        </li>
-        <li className="widgetSmListItem">
-          <img
-            src=""
-            alt=""
-            className="widgetSmImg"
-          />
-          <div className="widgetSmUser">
             <span className="widgetSmUsername">mandy rose</span>
+          </div>
+          <button className="widgetSmButton">
+            <VisibilityIcon className="widgetSmIcon" />
+            View detailes
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src=""
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <span className="widgetSmUsername">camilia cabelo</span>
+          </div>
+          <button className="widgetSmButton">
+            <VisibilityIcon className="widgetSmIcon" />
+            View detailes
+          </button>
+        </li>
+        <li className="widgetSmListItem">
+          <img
+            src=""
+            alt=""
+            className="widgetSmImg"
+          />
+          <div className="widgetSmUser">
+            <span className="widgetSmUsername">Jon Snow</span>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon className="widgetSmIcon" />
@@ -69,7 +69,7 @@ export default function WidgetSm() {
             className="widgetSmImg"
           />
           <div className="widgetSmUser">
-            <span className="widgetSmUsername">jon snow</span>
+            <span className="widgetSmUsername">will smith</span>
           </div>
           <button className="widgetSmButton">
             <VisibilityIcon className="widgetSmIcon" />

@@ -78,7 +78,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li className="sidebarListItem">
-              <Link to="/" style={{color: 'grey'}}>
+              <Link to="/faq" style={{color: 'grey'}}>
                 <QuizIcon className="sidebarIcon" />
                 FAQ
               </Link>

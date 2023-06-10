@@ -1,6 +1,5 @@
   import { Link } from "react-router-dom";
   import "./user.css";
-  import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
   import LocationSearchingIcon from '@mui/icons-material/LocationSearching';
   import MailOutlineIcon from '@mui/icons-material/MailOutline';
   import PermIdentityIcon from '@mui/icons-material/PermIdentity';
@@ -36,14 +35,10 @@
                 <PermIdentityIcon className="userShowIcon" />
                 <span className="userShowInfoTitle">Udara7</span>
               </div>
-              <div className="userShowInfo">
-                <CalendarTodayIcon className="userShowIcon" />
-                <span className="userShowInfoTitle">07.12.2000</span>
-              </div>
               <span className="userShowTitle">Contact Details</span>
               <div className="userShowInfo">
                 <PhoneAndroidIcon className="userShowIcon" />
-                <span className="userShowInfoTitle">+94 77 297 5936</span>
+                <span className="userShowInfoTitle"> 077 297 5936</span>
               </div>
               <div className="userShowInfo">
                 <MailOutlineIcon className="userShowIcon" />

@@ -1,24 +1,30 @@
 import "./userList.css";
-import {DataGrid} from '@mui/x-data-grid';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-import { userRows } from "../../dummyData";
+import { DataGrid } from "@mui/x-data-grid";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import { Link } from "react-router-dom";
-import { useState } from "react";
-
-
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function UserList() {
-  const [data, setData] = useState(userRows);
+  const [admins, setAdmins] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://localhost:8080/admins").then((response) => {
+      setAdmins(response.data);
+    });
+  }, []);
 
   const handleDelete = (id) => {
-    setData(data.filter((item) => item.id !== id));
+    axios.delete(`http://localhost:8080/admins/${id}`).then(() => {
+      setAdmins(admins.filter((admin) => admin.id !== id));
+    });
   };
-  
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
-      field: "User",
-      headerName: "User",
+      field: "username",
+      headerName: "Username",
       width: 200,
       renderCell: (params) => {
         return (
@@ -32,7 +38,7 @@ export default function UserList() {
     { field: "email", headerName: "Email", width: 200 },
     {
       field: "phoneNo",
-      headerName: "Phone No ",
+      headerName: "Phone No",
       width: 160,
     },
     {
@@ -42,7 +48,7 @@ export default function UserList() {
       renderCell: (params) => {
         return (
           <>
-            <Link to={"/user/" + params.row.id}>
+            <Link to={`/user/${params.row.id}`}>
               <button className="userListEdit">Edit</button>
             </Link>
             <DeleteOutlineIcon
@@ -58,7 +64,7 @@ export default function UserList() {
   return (
     <div className="userList">
       <DataGrid
-        rows={data}
+        rows={admins}
         disableSelectionOnClick
         columns={columns}
         pageSize={8}

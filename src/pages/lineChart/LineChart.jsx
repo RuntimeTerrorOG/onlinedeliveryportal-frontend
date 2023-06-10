@@ -1,26 +1,14 @@
+import Chart from "../../components/chart/Chart";
 import "./lineChart.css";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import { userData } from "../../dummyData";
 
-export default function Chart({ title, data, dataKey, grid }) {
 
+export default function Home() {
   return (
-    <div className="chart">
-      <h3 className="chartTitle">{title}</h3>
-      <ResponsiveContainer width="100%" aspect={4 / 1}>
-        <LineChart data={data}>
-          <XAxis dataKey="name" stroke="#5550bd" />
-          <Line type="monotone" dataKey={dataKey} stroke="#5550bd" />
-          <Tooltip />
-          {grid && <CartesianGrid stroke="#e0dfdf" strokeDasharray="5 5" />}
-        </LineChart>
-      </ResponsiveContainer>
+    <div className="Line">
+      <Chart data={userData} title="Monthly Revenue" grid dataKey="Sales"/>
+      <div className="LineWidgets">
+      </div>
     </div>
   );
 }

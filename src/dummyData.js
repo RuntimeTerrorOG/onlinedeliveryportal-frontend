@@ -1,66 +1,66 @@
 export const userData = [
   {
     name: "Jan",
-    "Active User": 4000,
+    "Sales": 4500,
   },
   {
     name: "Feb",
-    "Active User": 3000,
+    "Sales": 2000,
   },
   {
     name: "Mar",
-    "Active User": 5000,
+    "Sales": 3000,
   },
   {
     name: "Apr",
-    "Active User": 4000,
+    "Sales": 4000,
   },
   {
     name: "May",
-    "Active User": 3000,
+    "Sales": 5000,
   },
   {
     name: "Jun",
-    "Active User": 2000,
+    "Sales": 2000,
   },
   {
     name: "Jul",
-    "Active User": 4000,
+    "Sales": 4000,
   },
   {
     name: "Agu",
-    "Active User": 3000,
+    "Sales": 3000,
   },
   {
     name: "Sep",
-    "Active User": 4000,
+    "Sales": 4000,
   },
   {
     name: "Oct",
-    "Active User": 1000,
+    "Sales": 3000,
   },
   {
     name: "Nov",
-    "Active User": 4000,
+    "Sales": 4000,
   },
   {
     name: "Dec",
-    "Active User": 3000,
+    "Sales": 3000,
   },
 ];
 
 export const productData = [
   {
     name: "Jan",
-    "customers": 4000,
+    "customers": 40,
   },
   {
     name: "Feb",
-    "customers": 3000,
+    "customers": 30,
   },
   {
     name: "Mar",
-    "customers": 5000,
+    "customers": 50,
   },
 ];
 
@@ -73,88 +73,12 @@ export const userRows = [
     email: "Udara@gmail.com",
     phoneNo: "77 297 5936",
   },
-  {
-    id: 2,
-    username: "cristiano ronaldo",
-    avatar:
-      "",
-    email: "cristiano@gmail.com",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 3,
-    username: "enric haland",
-    avatar:
-      "",
-    email: "haland@gmail.com",
-    status: "active",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 4,
-    username: "leo messi",
-    avatar:
-      "",
-    email: "messi@gmail.com",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 5,
-    username: "brent rivera",
-    avatar:
-      "",
-    email: "brent@gmail.com",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 6,
-    username: "Justin timberlake",
-    avatar:
-      "",
-    email: "timberlake@gmail.com",
-    status: "active",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 7,
-    username: "bon jovi",
-    avatar:
-      "",
-    email: "jovi@gmail.com",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 8,
-    username: "dani daniels",
-    avatar:
-      "",
-    email: "dani@gmail.com",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 9,
-    username: "angle dimaria",
-    avatar:
-      "",
-    email: "angle@gmail.com",
-    phoneNo: "77 297 5936",
-  },
-  {
-    id: 10,
-    username: "steph curry",
-    avatar:
-      "",
-    email: "curry@gmail.com",
-    phoneNo: "77 297 5936",
-  },
 ];
 
 export const customerRows = [
   {
     id: 1,
-    username: "Jude belingham",
-    avatar:
-      "",
+    username: "nadira wickramasighe",
     email: "Jude@gmail.com",
     status: "active",
     phoneNo: "77 297 5936",
@@ -162,83 +86,65 @@ export const customerRows = [
   {
     id: 2,
     username: "prageeth jayasinghe",
-    avatar:
-      "",
     email: "prageeth@gmail.com",
     status: "active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5937",
   },
   {
     id: 3,
-    username: "dilini senarathna",
-    avatar:
-      "",
+    username: "dilini deshika",
     email: "dilini@gmail.com",
     status: "active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5938",
   },
   {
     id: 4,
     username: "ransilu sooriahette",
-    avatar:
-      "",
     email: "ransilu@gmail.com",
     status: "active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5939",
   },
   {
     id: 5,
     username: "sajini sandareka",
-    avatar:
-      "",
     email: "sajini@gmail.com",
     status: "active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5940",
   },
   {
     id: 6,
-    username: "isuri iddamalgoda",
-    avatar:
-      "",
+    username: "isuri chamathka",
     email: "isuri@gmail.com",
     status: "active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5941",
   },
   {
     id: 7,
     username: "jsutin bieber",
-    avatar:
-      "",
     email: "justin@gmail.com",
     status: "no active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5942",
   },
   {
     id: 8,
     username: "Jon Snow",
-    avatar:
-      "",
     email: "jon@gmail.com",
     status: "active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5943",
   },
   {
     id: 9,
     username: "camilia cabelo",
-    avatar:
-      "",
     email: "camila@gmail.com",
     status: "no active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5944",
   },
   {
     id: 10,
     username: "mandy rose",
-    avatar:
-      "",
     email: "mandy@gmail.com",
     status: "active",
-    phoneNo: "77 297 5936",
+    phoneNo: "77 297 5945",
   },
 ];
 
@@ -333,4 +239,42 @@ export const productRows = [
     status: "active",
     price: "Rs120.00",
   },
+];
+
+export const data = [
+  {
+    "name": "Page A",
+    "uv": 4000,
+    "pv": 2400
+  },
+  {
+    "name": "Page B",
+    "uv": 3000,
+    "pv": 1398
+  },
+  {
+    "name": "Page C",
+    "uv": 2000,
+    "pv": 9800
+  },
+  {
+    "name": "Page D",
+    "uv": 2780,
+    "pv": 3908
+  },
+  {
+    "name": "Page E",
+    "uv": 1890,
+    "pv": 4800
+  },
+  {
+    "name": "Page F",
+    "uv": 2390,
+    "pv": 3800
+  },
+  {
+    "name": "Page G",
+    "uv": 3490,
+    "pv": 4300
+  }
 ];

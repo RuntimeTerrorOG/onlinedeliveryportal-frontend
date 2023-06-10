@@ -1,0 +1,48 @@
+.faq {
+    flex: 4;
+    margin: 50px;
+  }
+  
+  .faqForm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .faqItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  
+  .faqItem > label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+  }
+  
+  .faqItem > input {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .faqSelect{
+      height: 40px;
+      border-radius: 5px;
+  }
+  
+  .faqButton{
+      width: px;
+      border: none;
+      background-color: darkblue;
+      color: white;
+      padding: 7px 10px;
+      font-weight: 600;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+  }

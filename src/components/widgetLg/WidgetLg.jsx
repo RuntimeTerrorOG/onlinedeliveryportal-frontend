@@ -20,9 +20,9 @@ export default function WidgetLg() {
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">udara dilaksha</span>
+            <span className="widgetLgName">prageeth jayasinghe</span>
           </td>
-          <td className="widgetLgDate">2 Jun 2021</td>
+          <td className="widgetLgDate">1 Jun 2021</td>
           <td className="widgetLgStatus">
             <Button type="Approved" />
           </td>
@@ -34,7 +34,7 @@ export default function WidgetLg() {
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">jason druello</span>
+            <span className="widgetLgName">dilini deshika</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
           <td className="widgetLgStatus">
@@ -48,9 +48,9 @@ export default function WidgetLg() {
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">Susan rose</span>
+            <span className="widgetLgName">ransilu sooriahette</span>
           </td>
-          <td className="widgetLgDate">2 Jun 2021</td>
+          <td className="widgetLgDate">3 Jun 2021</td>
           <td className="widgetLgStatus">
             <Button type="Pending" />
           </td>
@@ -62,9 +62,9 @@ export default function WidgetLg() {
               alt=""
               className="widgetLgImg"
             />
-            <span className="widgetLgName">dustin porrior</span>
+            <span className="widgetLgName">sajini sandareka</span>
           </td>
-          <td className="widgetLgDate">2 Jun 2021</td>
+          <td className="widgetLgDate">4 Jun 2021</td>
           <td className="widgetLgStatus">
             <Button type="Approved" />
           </td>
