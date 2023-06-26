@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";//import link component from react-route
 import "./Header.css";
 
 
+
 const Header = ({cartItems}) => {//takes cartItems prop
   return (
     <header className="header">
       <div className="logo">
         <h1>
-          Laundry Mart
+        <img className="img" src="./pics/logo1.jpg" />
         </h1>
       </div>
       <div className="header-links">

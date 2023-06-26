@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Cart.css";
+
+
 
 const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClearence}) => {//component takes 4 props
   const totalPrice = cartItems.reduce((price, item) => price + item.quantity * item.price, 0);//calculate total price of items
+
+  const[checkout,setCheckout] = useState({
+    bedsheet:"",blazer:"",blouse:"",cap:"",curtain:"", denim:"", flock:"", kids_short:"",kidsdenim:"",kidsfrock:"",kidst:"",ladies_denim:"",ladies_jacket:"",ladiest:"",lehega:"",pillowcase:"",saree:"",shirt:"",short_:"",skirt:"",sweeter:"",towel:"",trouser:"",tshirt:"",
+  })
+
+  const{bedsheet,blazer,blouse,cap,curtain,denim,flock,kids_short,kidsdenim,kidsfrock,kidst,ladies_denim,ladies_jacket,ladiest,lehega,pillowcase,saree,shirt,short_,skirt,sweeter,towel,trouser,tshirt} = checkout
   return (
     <div className="cart-items">
       <h2 className="cart-items-header">Cart Items</h2>
@@ -16,7 +24,7 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
     </div>
 
      {cartItems.length === 0 && (
-      <div className="cart-items-empty">No items are added.</div>
+      <div className="cart-items-empty">No items are added</div>
     )}
     <div>
       {cartItems.map((item) => (
@@ -55,6 +63,12 @@ const Cart = ({cartItems, handleAddProduct, handleRemoveProduct, handleCartClear
         </div>
        </div>
     </div>
+    
+    
+      
+      
+      
+    
 
   );
   

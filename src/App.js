@@ -8,6 +8,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 const App = () => {
   const { productItems } = data;
   const [cartItems, setCartItems]= useState([]);//cartItems is a state variable
+  
   const handleAddProduct = (product) =>{//increase quantity
     const ProductExist = cartItems.find((item) => item.id === product.id);
     if(ProductExist) {

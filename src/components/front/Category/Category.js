@@ -3,19 +3,21 @@ import { Link } from "react-router-dom"; //import link component from react-rout
 import "./Category.css";
 
 
+
 const Category = () => { //defines a new functional component called Category
   return (
+    
     <header className="category">
       
       <div className="category-links">
         <ul>
-          <li>
-            <Link to="/all">All</Link> {/*creates a Link component that will link to the /all route */}
+          <li className="cat">
+            <Link to="/all" className="catname">All</Link> {/*creates a Link component that will link to the /all route */}
           </li>
         </ul>
         <ul>
-          <li>
-            <Link to="/gen">Gents</Link>
+          <li className="cat">
+            <Link to="/gen" className="catname">Gents</Link>
           </li>
         </ul>
         <ul>
@@ -33,7 +35,8 @@ const Category = () => { //defines a new functional component called Category
             <Link to="/home">Home</Link>
           </li>
         </ul>
-
+       
+      
       </div>
     </header>
   

@@ -1,36 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Products/Products.css";
 import Category from "../Category/Category";
+import axios from "axios";
 
-const Kids = ({productItems, handleAddProduct}) => {    
+const Kids = ({handleAddProduct}) => {    
+  const[items,setItems]=useState([]);
+  useEffect(()=>{
+      loadItems();
+  },[]);
+  const loadItems=async()=>{
+    const result=await axios.get("http://localhost:8080/items");
+    setItems(result.data);
+  }
+
   return (
-   <div className="products">
-      <Category/>{/*rendering the category component*/}
-    
-   
-     {productItems.map((productItem)=>(
-        <div>
-          {productItem.category==="Kids"&&(//render only those items which have category equal to "Kids"
-      
-            <div className="card">
-              <div>
-                <img
-                 className="product-image"
-                 src={productItem.image} 
-                 alt={productItem.name}
-                />
-              </div>
-              <div>
-               <h3 className="product-name">{productItem.name}</h3>
-              </div>
-              <div className="product-price">Rs.{productItem.price}</div>
-              <div>
-                <button className="product-add-button" onClick={()=>handleAddProduct(productItem)}>Add to cart</button>
-              </div>
-            </div>
-          )}
+    <div className="products">
+      <div>
+        <h1>Kids</h1>
+      </div>
+      <Category/>
+      {
+        items.filter((item)=>{
+          return item.category.includes("Kids");
+        }).map((item)=>(
+          <div className="card">
+          <div>
+            <img
+             className="product-image"
+             src={item.image} 
+             alt={item.name}
+            />
+          </div>
+         <div>
+          <h3 className="product-name">{item.name}</h3>
+         </div>
+         <div className="product-price">Rs.{item.price}</div>
+         <div>
+          <button className="product-add-button" onClick={()=>handleAddProduct(item)}>Add to cart</button> {/*calls handleAddProduct function when clicked button*/}
+         </div>
         </div>
-      ))}
+        ))
+      }
     </div>
   );
   

@@ -9,13 +9,21 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    background-color: #6795F2;
+    background:linear-gradient(to right,#24a2eb,#65d6f9);
     color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    
+    
 }
 
 
 .category-links{
     display: flex;
+    align-items: center;
+    
 }
 
 .category-links ul li {
@@ -29,6 +37,7 @@
     text-transform: uppercase;
     color: white;
     padding: 0px 15px;
+    
 }
 
 .category-links ul li a:hover{
@@ -39,4 +48,4 @@
 
 
 
-
+  
