@@ -12,7 +12,7 @@ const Order = () => {
       <section className='order-now mb'>
         <Back name='Order' title='select Your Items' cover={"../images/backgrounds/about-back.jpg"} />
         <div className='container recent'>
-          <h1>Will add later</h1>
+          <h1>For the ordering part</h1>
         </div>
       </section>
     </>
