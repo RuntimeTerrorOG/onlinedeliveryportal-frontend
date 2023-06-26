@@ -90,24 +90,19 @@ export const ResetPassword = () => {
       };
 
     return (
-      <div  className="resetpassword-page">
+      <div className="login-page bgimage login-form" style={{backgroundImage: "url('../../background/backg5.jpg')"}}>
+       <div className="overlay-resetpassword" />
         <div className="auth-form-container">
            
         <div className="logoheading"><img src='.\images\logo.png' alt='' />
+        <br></br>
+        <br></br>
           </div>
-
             <p className="miniheading">Your New Password Must Be Different From <br></br>Previous Used Passwords</p>
             <br></br>
+            <br></br>
         <form className="resetpassword-form" onSubmit={handleSubmit}>
-            
-            <TextField value={name} onChange={handleNameChange}type="name" placeholder="Full Name" id="outlined-basic" label="Full Name" variant="outlined" name="name" />
-            {nameError && <p style={{color: "red"}}>{nameError}</p> || <br></br>}
-
-            <TextField value={email} onChange={handleEmailChange}type="email" placeholder="youremail@gmail.com" id="outlined-basic" label="Email" variant="outlined" name="email" />
-            {emailError && <p style={{color: "red"}}>{emailError}</p> || <br></br>}
-            
-            <TextField value={opass} onChange={handleOldpasswordChange}type="password" placeholder="*********" id="outlined-basic" label="Old Password" variant="outlined" name="password" />
-            {opassError && <p style={{color: "red"}}>{opassError}</p> || <br></br>}
+          
 
             <TextField value={npass} onChange={handleNewpasswordChange} type="password" placeholder="*********" id="outlined-basic" label="New Password" variant="outlined" name="password" />
             {npassError && <p style={{color: "red"}}>New password can't be empty</p> || <br></br>}
@@ -123,8 +118,9 @@ export const ResetPassword = () => {
             </div>
         </form>
         <br></br>
-       <Link className="linkbtn" to="/">Back to login</Link>
+       <Link className="linkbtn" to="/login">Back to login</Link>
     </div></div>
+    
     )
 }
 

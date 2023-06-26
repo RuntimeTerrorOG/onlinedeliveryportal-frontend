@@ -6,6 +6,32 @@ import AuthService from "../services/auth.service";
 const user = JSON.parse(localStorage.getItem("user"));
 
 //asynchronous function that sends a POST request to the server with the provided 'username', 'email', and 'password'
+export const registerAdmin = createAsyncThunk(
+  "auth/registerAdmin",
+  async ({ username, email, password, role }, thunkAPI) => {
+
+    //If the request is successful, the function dispatches a 'setMessage' action with a success message and returns the response data
+    try {
+      const response = await AuthService.register(username, email, password, role);
+      thunkAPI.dispatch(setMessage(response.data.message));
+      return response.data;
+    } 
+    
+    //If the request fails, the function dispatches a 'setMessage' action with an error message and returns 'thunkAPI.rejectWithValue()' function.
+    catch (error) {
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+      thunkAPI.dispatch(setMessage(message));
+      return thunkAPI.rejectWithValue();
+    }
+  }
+);
+
+//asynchronous function that sends a POST request to the server with the provided 'username', 'email', and 'password'
 export const register = createAsyncThunk(
   "auth/register",
   async ({ username, email, password }, thunkAPI) => {

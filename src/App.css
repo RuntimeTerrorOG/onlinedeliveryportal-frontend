@@ -163,6 +163,19 @@ color: white;
   opacity: 0.4;
   z-index: 1;
 } 
+.overlay-resetpassword {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Change the opacity value to your desired value */
+  background-image: linear-gradient(79deg, rgb(39, 39, 39)  ,rgb(123, 123, 123), rgb(189, 189, 189));
+  /* Change the opacity value to your desired value */
+  opacity: 0.4;
+  z-index: 1;
+} 
+
 .auth-form-container-button{
   text-align: center;
   font-family: 'Amaranth';
