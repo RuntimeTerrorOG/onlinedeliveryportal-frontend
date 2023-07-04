@@ -10,9 +10,9 @@ import NewProduct from "./pages/newProduct/NewProduct";
 import UserList from "./pages/userList/UserList";
 import LineChart from "./pages/lineChart/LineChart";
 import CustomerList from "./pages/customerList/CustomerList";
-import BarChart from "@mui/icons-material/BarChart";
 import Faq from "./pages/faq/Faq";
 import Feedback  from "./pages/feedback/Feedback";
+import BarChart from "./pages/barChart/BarChart";
 
 
 function App() {

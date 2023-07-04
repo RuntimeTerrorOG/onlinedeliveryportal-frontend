@@ -16,7 +16,7 @@ export default function Faq() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const re = /(.|\s)*\S(.|\s)*/gim;
+    const re = /^\s+$/;
     if (!re.test(data.answer)) {
       alert("You have Not entered an answer ");
       setData((prev) => ({ ...prev, answer: "" }));

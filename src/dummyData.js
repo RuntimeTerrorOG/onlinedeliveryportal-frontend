@@ -49,6 +49,8 @@ export const userData = [
   },
 ];
 
+
+
 export const productData = [
   {
     name: "Jan",
@@ -238,6 +240,15 @@ export const productRows = [
     stock: 123,
     status: "active",
     price: "Rs120.00",
+  },
+];
+
+export const UserRows = [
+  {
+    id: 1,
+    username: "will smith",
+    email: "will78smith@gmail.com",
+    phoneNo: "077 297 5936",
   },
 ];
 

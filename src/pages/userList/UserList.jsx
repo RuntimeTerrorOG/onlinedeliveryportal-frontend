@@ -1,13 +1,17 @@
 import "./userList.css";
 import { DataGrid } from "@mui/x-data-grid";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
-import { Link } from "react-router-dom";
+import { UserRows } from "../../dummyData";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function UserList() {
-  const [admins, setAdmins] = useState([]);
+  const [data, setData] = useState(UserRows);
 
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id));
+  };
+  /*
   useEffect(() => {
     axios.get("http://localhost:8080/admins")
       .then((response) => {
@@ -19,65 +23,61 @@ export default function UserList() {
   }, []);
 
  const handleDelete = (id) => {
-  axios.delete(`http://localhost:8080/admins/${id}`)
+  axios.delete(`http://localhost:8080/admins/{id}`)
     .then(() => {
       setAdmins(admins.filter((admin) => admin.id !== id));
     })
     .catch((error) => {
       console.error("Error:", error);
     });
-};
+}; */
 
-  const columns = [
-    { field: "id", headerName: "ID", width: 90 },
-    {
-      field: "username",
-      headerName: "Username",
-      width: 200,
-      renderCell: (params) => {
-        return (
-          <div className="userListUser">
-            <img className="userListImg" src={params.row.avatar} alt="" />
-            {params.row.username}
-          </div>
-        );
-      },
+const columns = [
+  { field: "id", headerName: "ID", width: 90 },
+  {
+    field: "User",
+    headerName: "Employee name",
+    width: 200,
+    renderCell: (params) => {
+      return (
+        <div className="userListUser">
+          {params.row.username}
+        </div>
+      );
     },
-    { field: "email", headerName: "Email", width: 200 },
-    {
-      field: "phoneNo",
-      headerName: "Phone No",
-      width: 160,
+  },
+  { field: "email", headerName: "Email", width: 200 },
+  {
+    field: "phoneNo",
+    headerName: "Phone No ",
+    width: 160,
+  },
+  {
+    field: "action",
+    headerName: "Action",
+    width: 150,
+    renderCell: (params) => {
+      return (
+        <>
+          <DeleteOutlineIcon
+            className="userListDelete"
+            onClick={() => handleDelete(params.row.id)}
+          />
+        </>
+      );
     },
-    {
-      field: "action",
-      headerName: "Action",
-      width: 150,
-      renderCell: (params) => {
-        return (
-          <>
-            <Link to={`/user/${params.row.id}`}>
-              <button className="userListEdit">Edit</button>
-            </Link>
-            <DeleteOutlineIcon
-              className="userListDelete"
-              onClick={() => handleDelete(params.row.id)}
-            />
-          </>
-        );
-      },
-    },
-  ];
+  },
+];
 
-  return (
-    <div className="userList">
-      <DataGrid
-        rows={admins}
-        disableSelectionOnClick
-        columns={columns}
-        pageSize={8}
-        checkboxSelection
-      />
-    </div>
-  );
+return (
+  <div className="userList">
+    <DataGrid
+      rows={data}
+      disableSelectionOnClick
+      columns={columns}
+      pageSize={8}
+      checkboxSelection
+    />
+  </div>
+);
 }
